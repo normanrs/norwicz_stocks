@@ -1,12 +1,13 @@
-# Cronuts, Go Nuts!
-This is a Turing project to create an array of nested objects from a JSON file. This was accomplished, and I added a method for getting the ingredient data along with corresponding helper methods.
+# norm_stocks
+This is a simple app to gather financial data on my investments and export them to a CSV.
 
 ## Instructions:
 1. Clone this repo.
 2. Run "rake" from the command line to run all project tests.
 
 ## Environment:
-Ruby 2.4.1, Rake 12.3.2
+Ruby 2.6.1
 
-## Turing Project
-Original project assignment [Link](https://github.com/mikedao/cronut)
+## References
+Financial Modeling Prep [Link](https://financialmodelingprep.com/developer/docs/)
+SEC EDGAR [Link](https://www.sec.gov/edgar/searchedgar/companysearch.html)
