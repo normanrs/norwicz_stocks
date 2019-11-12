@@ -1,4 +1,4 @@
-# norm_stocks
+# norwicz_stocks
 This is a simple app to gather financial data on my investments and export them to a CSV.
 
 ## Instructions:
