@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './lib/make_cronuts.rb'
+require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
 
@@ -9,6 +9,7 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_presence_of_desired_data
+    require 'pry'; binding.pry
   end
 
 end

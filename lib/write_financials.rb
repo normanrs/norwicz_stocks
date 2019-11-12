@@ -7,7 +7,13 @@ class WriteFinanacials
   include RequestHelper
 
   def initialize
-    body = statements
+    statements.each do |statement|
+      statement.each do |key, value|
+        require 'pry'; binding.pry
+        instance_variable_set("@#{key}", value)
+        self.class.send(:attr_reader, key) 
+      end
+    end
   end
 
   private
@@ -60,7 +66,6 @@ class WriteFinanacials
       responses
     end 
   end
-
 
   def fmp_url
     URI.parse("https://financialmodelingprep.com/api/v3/financials/income-statement/") 
