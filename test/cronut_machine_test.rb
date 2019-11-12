@@ -6,7 +6,6 @@ class MakeCronutsTest < Minitest::Test
 
   def setup
     @job      = MakeCronuts.new
-    @data     = @job.startup_data("./data/cronut.json")
   end
 
   def test_it_starts_with_json_data

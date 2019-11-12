@@ -1,8 +1,3 @@
-require './lib/import_data.rb'
-require './lib/item.rb'
-require './lib/batter.rb'
-require './lib/topping.rb'
-
 class MakeCronuts
   include ImportData
 
@@ -14,7 +9,6 @@ class MakeCronuts
 
   def make_items
     @items = []
-    require 'pry'; binding.pry
     @data_in.each do |item|
       item_data = {id: item[:id],
                  type: item[:type],
