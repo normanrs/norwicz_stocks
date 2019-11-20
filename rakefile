@@ -1,10 +1,16 @@
 require 'rake'
 require "rake/testtask"
 
+namespace :stocks do
+  desc 'Collects data'
+  task :data  do |_task|
+    puts 'running stock data collection'
+  end
+end
 
 task default: "test"
 tests_num = Dir["test/*_test.rb"].count
+# puts "** Running #{tests_num} tests **"
 Rake::TestTask.new do |task|
   task.pattern = "test/*_test.rb"
 end
-puts "** Running #{tests_num} tests **"
