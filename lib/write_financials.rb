@@ -2,16 +2,17 @@ require 'net/http'
 require 'uri'
 require 'json'
 require_relative 'request_helper'
+require_relative 'stock'
 
 class WriteFinanacials
   include RequestHelper
+  attr_reader :stocks
 
   def initialize
+    @stocks = []
     statements.each do |statement|
-      statement.each do |key, value|
-        instance_variable_set("@#{key}", value)
-        self.class.send(:attr_reader, key) 
-      end
+      stock_in = Stock.new(statement)
+      @stocks << stock_in
     end
   end
 
