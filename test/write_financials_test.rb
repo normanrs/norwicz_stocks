@@ -9,7 +9,6 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_presence_of_desired_data
-    require 'pry'; binding.pry
   end
 
 end

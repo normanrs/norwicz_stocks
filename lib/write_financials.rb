@@ -9,7 +9,6 @@ class WriteFinanacials
   def initialize
     statements.each do |statement|
       statement.each do |key, value|
-        require 'pry'; binding.pry
         instance_variable_set("@#{key}", value)
         self.class.send(:attr_reader, key) 
       end
@@ -70,6 +69,5 @@ class WriteFinanacials
   def fmp_url
     URI.parse("https://financialmodelingprep.com/api/v3/financials/income-statement/") 
   end
-
 
 end
