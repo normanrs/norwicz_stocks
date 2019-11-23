@@ -2,19 +2,9 @@ require 'net/http'
 require 'uri'
 require 'json'
 require_relative 'request_helper'
-require_relative 'stock'
 
 class WriteFinanacials
   include RequestHelper
-  attr_reader :stocks
-
-  def initialize
-    @stocks = []
-    # statements.each do |statement|
-    #   stock_in = Stock.new(statement)
-    #   @stocks << stock_in
-    # end
-  end
 
   def write_statements(name)
     write_json(name, statements)

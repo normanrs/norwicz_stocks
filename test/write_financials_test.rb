@@ -8,8 +8,12 @@ class WriteFinancialsTest < Minitest::Test
     @job = WriteFinanacials.new
   end
 
+  def test_job_created
+    assert @job
+  end
+
   def test_write_statements
-    @job.write_statements
+    @job.write_statements('fmp')
   end
 
 end
