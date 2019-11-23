@@ -6,5 +6,11 @@ class Stock
       self.class.send(:attr_reader, key) 
     end
   end
-  
+
+  def ffo 
+    require 'pry'; binding.pry
+    #FFO is net_income + depreciation_and_amortization - gain_from_sale_of_real_estate
+    net = self.NetIncome.to_f
+  end
+
 end

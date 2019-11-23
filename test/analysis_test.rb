@@ -12,8 +12,8 @@ class AnalysisTest < Minitest::Test
     assert @analysis
   end
 
-  def test_write_statements
-    @analysis.read_fmp_json
+  def test_stock_population
+    refute_empty @analysis.stocks
   end
 
 end
