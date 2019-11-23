@@ -51,27 +51,22 @@ class WriteFinanacials
     stock_list.join(',')
   end
 
-  def all_data 
-    financials = api_call(fmp_financials)
-    require 'pry'; binding.pry
-    api_call(fmp_cashflow)
-  end
-
   def financials
-    @statements ||= begin
+    @financials ||= begin
       responses = []
       stock_list.each do |stock|
-        # uri = fmp_financials + stock
-        # request = Net::HTTP::Get.new(uri)
-        # request["Upgrade-Insecure-Requests"] = "1"
-        # req_options = { use_ssl: uri.scheme == "https", }
-        # response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-        #   http.request(request)
-        # end 
+        new_financial = []
         financial = api_call(fmp_financials, stock)
-        cashflow  = api_call(fmp_cashflow, stock)
-        ratios    = api_call(fmp_ratios, stock)
-        responses << api_call(fmp_financials, stock)
+        cashflow  = api_call(fmp_cashflow, stock)['financials']
+        ratios    = api_call(fmp_ratios, stock)['ratios']
+        financial['financials'][0..3].each do |annual| 
+          cash  = cashflow.find { |r| r['date'] == annual['date'] }
+          ratio = ratios.find { |r| r['date'] == annual['date'] }
+          annual.merge!(cash).merge!(ratio)
+          new_financial << annual
+        end
+        new_hash = {'symbol' => stock, 'financials' => new_financial}
+        responses << new_hash
       end
       responses
     end 
