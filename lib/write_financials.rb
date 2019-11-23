@@ -10,13 +10,23 @@ class WriteFinanacials
 
   def initialize
     @stocks = []
-    statements.each do |statement|
-      stock_in = Stock.new(statement)
-      @stocks << stock_in
-    end
+    # statements.each do |statement|
+    #   stock_in = Stock.new(statement)
+    #   @stocks << stock_in
+    # end
+  end
+
+  def write_statements(name)
+    write_json(name, statements)
   end
 
   private
+
+  def write_json(type, hash)
+    File.open("data/#{type}_data.json", 'w') do |f|
+      f.write(JSON.pretty_generate(hash, indent: "\t", object_nl: "\n"))
+    end
+  end
 
   def stock_list 
     %w[

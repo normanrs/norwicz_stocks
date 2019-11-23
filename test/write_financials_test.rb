@@ -8,8 +8,8 @@ class WriteFinancialsTest < Minitest::Test
     @job = WriteFinanacials.new
   end
 
-  def test_presence_of_desired_data
-    require 'pry'; binding.pry
+  def test_write_statements
+    @job.write_statements
   end
 
 end
