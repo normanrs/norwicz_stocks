@@ -16,4 +16,8 @@ class AnalysisTest < Minitest::Test
     refute_empty @analysis.stocks
   end
 
+  def test_stock_data
+    @analysis.write_data
+  end
+
 end

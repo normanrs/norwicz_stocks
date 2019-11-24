@@ -13,6 +13,7 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_write_statements
+    skip "Data already exists"
     @job.write_statements('fmp')
   end
 
