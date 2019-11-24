@@ -41,7 +41,6 @@ class WriteFinanacials
       EPD
       MPW
       MGP
-      ACB
       SLM
       COLD
       ]
