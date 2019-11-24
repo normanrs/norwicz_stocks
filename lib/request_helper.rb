@@ -21,6 +21,7 @@ module RequestHelper
     response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
       http.request(request)
     end 
+    puts "#{stock} #{url.path} returned #{response.code}"
     JSON.parse(response.body)
   end
 

@@ -55,18 +55,26 @@ class WriteFinanacials
     @financials ||= begin
       responses = []
       stock_list.each do |stock|
-        new_financial = []
-        financial = api_call(fmp_financials, stock)
-        cashflow  = api_call(fmp_cashflow, stock)['financials']
-        ratios    = api_call(fmp_ratios, stock)['ratios']
-        financial['financials'][0..3].each do |annual| 
-          cash  = cashflow.find { |r| r['date'] == annual['date'] }
-          ratio = ratios.find { |r| r['date'] == annual['date'] }
-          annual.merge!(cash).merge!(ratio)
-          new_financial << annual
+        begin
+          new_financial = []
+          financial = api_call(fmp_financials, stock) || {}
+          cashflow  = api_call(fmp_cashflow, stock)['financials'] || {}
+          ratios    = api_call(fmp_ratios, stock)['ratios'] || {}
+          values    = api_call(fmp_value, stock)['enterpriseValues'] || {}
+          metrics   = api_call(fmp_metrics, stock)['metrics'] || {}
+          financial['financials'][0..3].each do |annual| 
+            cash   = cashflow.find { |r| r['date'] == annual['date'] } || {}
+            ratio  = ratios.find { |r| r['date'] == annual['date'] } || {}
+            value  = values.find { |r| r['date'] == annual['date'] } || {}
+            metric = metrics.find { |r| r['date'] == annual['date'] } || {}
+            annual.merge!(cash).merge!(ratio).merge!(value).merge!(metric)
+            new_financial << annual
+          end
+          new_hash = { 'symbol' => stock, 'financials' => new_financial }
+          responses << new_hash
+        rescue => e
+          puts "Error building #{stock} data: #{e.message}"
         end
-        new_hash = {'symbol' => stock, 'financials' => new_financial}
-        responses << new_hash
       end
       responses
     end 
@@ -84,17 +92,16 @@ class WriteFinanacials
     URI.parse("https://financialmodelingprep.com/api/v3/financial-ratios/")
   end
 
-  def fmp_enterprise_value 
+  def fmp_value 
     URI.parse("https://financialmodelingprep.com/api/v3/enterprise-value/")
   end
 
-  def fmp_key_metrics 
+  def fmp_metrics 
     URI.parse("https://financialmodelingprep.com/api/v3/company-key-metrics/")
   end
 
   def fmp_rating 
     URI.parse("https://financialmodelingprep.com/api/v3/company/rating/")
   end
-
 
 end
