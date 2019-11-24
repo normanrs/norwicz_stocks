@@ -21,7 +21,7 @@ class Analysis
           financial.delete(data)
         end
         financial['date'] = financial['date'][0..3].to_i
-        financial.transform_values! {|v| v.to_f if v.is_a? String }
+        financial.transform_values! {|v| v.to_f }
       end
       result << Stock.new(stock)
     end
@@ -49,27 +49,37 @@ class Analysis
   def write_data
     result = []
     stocks.each do |stock| 
-      CSV.open("data/#{stock.symbol}.csv", "wb") do |csv| 
+      column_header = my_data(stock.financials.first).keys
+      CSV.open("output/#{stock.symbol}.csv", "wb", :write_headers=> true, :headers => column_header) do |csv| 
         stock.financials.each do |financial| 
-          csv << my_data(financial)
+          csv << my_data(financial).values
         end
       end
     end
   end
 
   def my_data(data) 
-    require 'pry'; binding.pry
+    to_delete = data.keys - keep_keys
+    to_delete.each do |delete_key| 
+      data.delete(delete_key)
+    end
+    data
   end
 
   def keep_keys 
     %w[
+        date
+        StockPrice
+        NumberofShares
         EBITDAMargin
         NetProfitMargin
         dividendYield
+        dividendPayoutRatio
         debtRatio
         cashFlowToDebtRatio
         operatingCashFlowPerShare
         payoutRatio
+        priceCashFlowRatio
       ]
   end
 
