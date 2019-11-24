@@ -84,5 +84,17 @@ class WriteFinanacials
     URI.parse("https://financialmodelingprep.com/api/v3/financial-ratios/")
   end
 
+  def fmp_enterprise_value 
+    URI.parse("https://financialmodelingprep.com/api/v3/enterprise-value/")
+  end
+
+  def fmp_key_metrics 
+    URI.parse("https://financialmodelingprep.com/api/v3/company-key-metrics/")
+  end
+
+  def fmp_rating 
+    URI.parse("https://financialmodelingprep.com/api/v3/company/rating/")
+  end
+
 
 end

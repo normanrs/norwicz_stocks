@@ -16,10 +16,34 @@ class Analysis
     stocks.each do | stock |
       stock['financials'].each do |financial|
         financial.transform_keys! {|k| k.gsub(/\W+/, '')} 
+        financial.merge!add_data(financial)
+        delete_data.each do |data| 
+          financial.delete(data)
+        end
+        financial['date'] = financial['date'][0..3].to_i
+        financial.transform_values! {|v| v.to_f if v.is_a? String }
       end
       result << Stock.new(stock)
     end
     result
+  end
+
+  def add_data(fin_hash) 
+    hash_out = fin_hash['investmentValuationRatios']
+    hash_out.merge!(fin_hash['profitabilityIndicatorRatios'])
+    hash_out.merge!(fin_hash['operatingPerformanceRatios'])
+    hash_out.merge!(fin_hash['debtRatios'])
+    hash_out.merge!(fin_hash['cashFlowIndicatorRatios'])
+  end
+
+  def delete_data
+    %w[ investmentValuationRatios
+        liquidityMeasurementRatios
+        profitabilityIndicatorRatios
+        operatingPerformanceRatios
+        debtRatios
+        cashFlowIndicatorRatios
+      ]
   end
 
   def write_data
@@ -38,55 +62,15 @@ class Analysis
   end
 
   def keep_keys 
-    ["date",
-      "Revenue",
-      "Revenue Growth",
-      "Cost of Revenue",
-      "Gross Profit",
-      "Operating Expenses",
-      "Operating Income",
-      "Interest Expense",
-      "Earnings before Tax",
-      "Income Tax Expense",
-      "Net Income",
-      "Preferred Dividends",
-      "Net Income Com",
-      "EPS",
-      "EPS Diluted",
-      "Weighted Average Shs Out",
-      "Weighted Average Shs Out (Dil)",
-      "Dividend per Share",
-      "Gross Margin",
-      "EBITDA Margin",
-      "EBIT Margin",
-      "Profit Margin",
-      "Free Cash Flow margin",
-      "EBITDA",
-      "EBIT",
-      "Consolidated Income",
-      "Earnings Before Tax Margin",
-      "Net Profit Margin",
-      "Depreciation & Amortization",
-      "Stock-based compensation",
-      "Operating Cash Flow",
-      "Capital Expenditure",
-      "Acquisitions and disposals",
-      "Investment purchases and sales",
-      "Investing Cash flow",
-      "Issuance (repayment) of debt",
-      "Issuance (buybacks) of shares",
-      "Dividend payments",
-      "Financing Cash Flow",
-      "Effect of forex changes on cash",
-      "Net cash flow / Change in cash",
-      "Free Cash Flow",
-      "Net Cash/Marketcap",
-      "investmentValuationRatios",
-      "profitabilityIndicatorRatios",
-      "operatingPerformanceRatios",
-      "liquidityMeasurementRatios",
-      "debtRatios",
-      "cashFlowIndicatorRatios"]
+    %w[
+        EBITDAMargin
+        NetProfitMargin
+        dividendYield
+        debtRatio
+        cashFlowToDebtRatio
+        operatingCashFlowPerShare
+        payoutRatio
+      ]
   end
 
   def ffo_calc 
