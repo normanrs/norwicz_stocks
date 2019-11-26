@@ -52,7 +52,7 @@ class Analysis
       column_header = my_data(stock.financials.first).keys
       CSV.open("output/#{stock.symbol}.csv", "wb", :write_headers=> true, :headers => column_header) do |csv| 
         stock.financials.each do |financial| 
-          csv << my_data(financial).values
+          csv << financial.values
         end
       end
     end
