@@ -49,7 +49,8 @@ class Analysis
   def write_data
     result = []
     stocks.each do |stock| 
-      column_header = my_data(stock.financials.first).keys
+      my_data(stock)
+      column_header = stock.financials.first.keys
       CSV.open("output/#{stock.symbol}.csv", "wb", :write_headers=> true, :headers => column_header) do |csv| 
         stock.financials.each do |financial| 
           csv << financial.values
@@ -58,12 +59,10 @@ class Analysis
     end
   end
 
-  def my_data(data) 
-    to_delete = data.keys - keep_keys
-    to_delete.each do |delete_key| 
-      data.delete(delete_key)
+  def my_data(stock)
+    stock.financials.each do |financial|
+      financial.keep_if {|key,_| keep_keys.include? key }
     end
-    data
   end
 
   def keep_keys 

@@ -20,7 +20,6 @@ class WriteFinanacials
 
   def stock_list 
     %w[
-      SPG
       NRZ
       GNL
       PLYM
@@ -56,7 +55,7 @@ class WriteFinanacials
       stock_list.each do |stock|
         begin
           new_financial = []
-          financial = api_call(fmp_financials, stock) || {}
+          financial = api_call(fmp_financials, stock)
           cashflow  = api_call(fmp_cashflow, stock)['financials'] || {}
           ratios    = api_call(fmp_ratios, stock)['ratios'] || {}
           values    = api_call(fmp_value, stock)['enterpriseValues'] || {}
@@ -72,6 +71,7 @@ class WriteFinanacials
           new_hash = { 'symbol' => stock, 'financials' => new_financial }
           responses << new_hash
         rescue => e
+          require 'pry'; binding.pry
           puts "Error building #{stock} data: #{e.message}"
         end
       end
