@@ -21,7 +21,7 @@ class Analysis
           financial.delete(data)
         end
         financial['date'] = financial['date'][0..3].to_i
-        financial.transform_values! {|v| v.to_f }
+        financial.transform_values! {|v| v.to_f.round(3) }
       end
       result << Stock.new(stock)
     end
@@ -61,6 +61,7 @@ class Analysis
 
   def my_data(stock)
     stock.financials.each do |financial|
+      ffo_calc(financial)
       financial.keep_if {|key,_| keep_keys.include? key }
     end
   end
@@ -68,26 +69,26 @@ class Analysis
   def keep_keys 
     %w[
         date
-        StockPrice
-        NumberofShares
         EBITDAMargin
         NetProfitMargin
         dividendYield
         dividendPayoutRatio
-        debtRatio
         cashFlowToDebtRatio
         operatingCashFlowPerShare
-        payoutRatio
         priceCashFlowRatio
+        returnOnEquity
+        debtEquityRatio
+        ffo
       ]
   end
 
-  def ffo_calc 
-    [
-      "Net Income",
-      "Depreciation & Amortization",
-      "Acquisitions and disposals",
-    ]
+  def ffo_calc(financial)
+    ebitda = financial['EBITDA']
+    depre_amort = financial['DepreciationAmortization']
+    acquisition = financial['Acquisitionsanddisposals']
+    ffo = (ebitda + depre_amort - acquisition)
+    add_ffo = {'ffo' => ffo }
+    financial.merge!(add_ffo)
   end
 
 end

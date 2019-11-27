@@ -1,5 +1,5 @@
-date,EBITDAMargin,NetProfitMargin,priceCashFlowRatio,dividendYield,debtRatio,cashFlowToDebtRatio,operatingCashFlowPerShare,payoutRatio,dividendPayoutRatio
-2018.0,0.221,-0.195,0.0,0.0,0.404,0.05570184556141,1.0201,-0.344,0.0
-2017.0,0.32,-0.0708,0.0,0.0,0.4369,0.053014440630335,1.0938,-3.5,0.0
-2016.0,0.551,0.1374,0.0,0.0,0.3807,0.10903444564047,2.4792,1.026,1.5710643611578
-2015.0,0.522,0.344,0.0,0.0,0.5413,3.7311853762925,1.039,0.615,1.1038738498466
+date,EBITDAMargin,NetProfitMargin,priceCashFlowRatio,dividendYield,returnOnEquity,debtEquityRatio,cashFlowToDebtRatio,operatingCashFlowPerShare,dividendPayoutRatio,ffo
+2018.0,0.221,-0.195,0.0,0.0,-0.074,1.281,0.056,1.02,0.0,1317752000.0
+2017.0,0.32,-0.071,0.0,0.0,-0.024,1.288,0.053,1.094,0.0,414509000.0
+2016.0,0.551,0.137,0.0,0.0,0.042,1.34,0.109,2.479,1.571,720155000.0
+2015.0,0.522,0.344,0.0,0.0,0.04,2.195,3.731,1.039,1.104,211028000.0
