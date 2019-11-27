@@ -61,7 +61,7 @@ class Analysis
 
   def my_data(stock)
     stock.financials.each do |financial|
-      ffo_calc(financial)
+      pffo_calc(financial)
       financial.keep_if {|key,_| keep_keys.include? key }
     end
   end
@@ -71,24 +71,25 @@ class Analysis
         date
         EBITDAMargin
         NetProfitMargin
-        dividendYield
-        dividendPayoutRatio
+        DividendYield
         cashFlowToDebtRatio
         operatingCashFlowPerShare
         priceCashFlowRatio
         returnOnEquity
         debtEquityRatio
-        ffo
+        pffo
       ]
   end
 
-  def ffo_calc(financial)
-    ebitda = financial['EBITDA']
-    depre_amort = financial['DepreciationAmortization']
-    acquisition = financial['Acquisitionsanddisposals']
-    ffo = (ebitda + depre_amort - acquisition)
-    add_ffo = {'ffo' => ffo }
-    financial.merge!(add_ffo)
+  def pffo_calc(financial)
+    ebitda = financial['EBITDA'] || 0
+    depreciation = financial['DepreciationAmortization'] || 0
+    acquisition = financial['Acquisitionsanddisposals'] || 0
+    expenditure = financial['CapitalExpenditure'] || 0
+    market_cap = financial['MarketCap'] || 0
+    pffo = market_cap/(ebitda + depreciation - acquisition - expenditure)
+    add_pffo = {'pffo' => pffo }
+    financial.merge!(add_pffo)
   end
 
 end
