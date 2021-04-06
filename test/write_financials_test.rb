@@ -13,7 +13,6 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_write_statements
-    skip
     @job.write_statements('fmp')
   end
 
