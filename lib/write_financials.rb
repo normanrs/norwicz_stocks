@@ -71,7 +71,6 @@ class WriteFinanacials
           new_hash = { 'symbol' => stock, 'financials' => new_financial }
           responses << new_hash
         rescue => e
-          require 'pry'; binding.pry
           puts "Error building #{stock} data: #{e.message}"
         end
       end
