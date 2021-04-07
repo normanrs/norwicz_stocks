@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'uri'
 
@@ -16,13 +18,12 @@ module RequestHelper
   def api_call(url, stock)
     uri = url + stock
     request = Net::HTTP::Get.new(uri)
-    request["Upgrade-Insecure-Requests"] = "1"
-    req_options = { use_ssl: uri.scheme == "https", }
+    request['Upgrade-Insecure-Requests'] = '1'
+    req_options = { use_ssl: uri.scheme == 'https' }
     response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
       http.request(request)
-    end 
+    end
     puts "#{stock} #{url.path} returned #{response.code}"
     JSON.parse(response.body)
   end
-
 end

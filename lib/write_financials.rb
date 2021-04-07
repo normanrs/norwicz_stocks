@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/PerceivedComplexity
+
 require 'net/http'
 require 'uri'
 require 'json'
@@ -18,7 +22,7 @@ class WriteFinanacials
     end
   end
 
-  def stock_list 
+  def stock_list
     %w[
       NRZ
       GNL
@@ -42,10 +46,10 @@ class WriteFinanacials
       MGP
       SLM
       COLD
-      ]
+    ]
   end
 
-  def stocks 
+  def stocks
     stock_list.join(',')
   end
 
@@ -53,53 +57,55 @@ class WriteFinanacials
     @financials ||= begin
       responses = []
       stock_list.each do |stock|
-        begin
-          new_financial = []
-          financial = api_call(fmp_financials, stock)
-          cashflow  = api_call(fmp_cashflow, stock)['financials'] || {}
-          ratios    = api_call(fmp_ratios, stock)['ratios'] || {}
-          values    = api_call(fmp_value, stock)['enterpriseValues'] || {}
-          metrics   = api_call(fmp_metrics, stock)['metrics'] || {}
-          financial['financials'][0..3].each do |annual| 
-            cash   = cashflow.find { |r| r['date'] == annual['date'] } || {}
-            ratio  = ratios.find { |r| r['date'] == annual['date'] } || {}
-            value  = values.find { |r| r['date'] == annual['date'] } || {}
-            metric = metrics.find { |r| r['date'] == annual['date'] } || {}
-            annual.merge!(cash).merge!(ratio).merge!(value).merge!(metric)
-            new_financial << annual
-          end
-          new_hash = { 'symbol' => stock, 'financials' => new_financial }
-          responses << new_hash
-        rescue => e
-          puts "Error building #{stock} data: #{e.message}"
-        end
+        new_hash = { 'symbol' => stock, 'financials' => financial_update(stock) }
+        responses << new_hash
+      rescue StandardError => e
+        puts "Error building #{stock} data: #{e.message}"
       end
       responses
-    end 
+    end
+  end
+
+  def financial_update(stock)
+    new_financial = []
+    financial = api_call(fmp_financials, stock)
+    cashflow  = api_call(fmp_cashflow, stock)['financials'] || {}
+    ratios    = api_call(fmp_ratios, stock)['ratios'] || {}
+    values    = api_call(fmp_value, stock)['enterpriseValues'] || {}
+    metrics   = api_call(fmp_metrics, stock)['metrics'] || {}
+    financial['financials'][0..3].each do |annual|
+      cash   = cashflow.find { |r| r['date'] == annual['date'] } || {}
+      ratio  = ratios.find { |r| r['date'] == annual['date'] } || {}
+      value  = values.find { |r| r['date'] == annual['date'] } || {}
+      metric = metrics.find { |r| r['date'] == annual['date'] } || {}
+      annual.merge!(cash).merge!(ratio).merge!(value).merge!(metric)
+      new_financial << annual
+    end
+    new_financial
   end
 
   def fmp_financials
-    URI.parse("https://financialmodelingprep.com/api/v3/financials/income-statement/") 
+    URI.parse('https://financialmodelingprep.com/api/v3/financials/income-statement/')
   end
-  
+
   def fmp_cashflow
-    URI.parse("https://financialmodelingprep.com/api/v3/financials/cash-flow-statement/") 
+    URI.parse('https://financialmodelingprep.com/api/v3/financials/cash-flow-statement/')
   end
 
-  def fmp_ratios 
-    URI.parse("https://financialmodelingprep.com/api/v3/financial-ratios/")
+  def fmp_ratios
+    URI.parse('https://financialmodelingprep.com/api/v3/financial-ratios/')
   end
 
-  def fmp_value 
-    URI.parse("https://financialmodelingprep.com/api/v3/enterprise-value/")
+  def fmp_value
+    URI.parse('https://financialmodelingprep.com/api/v3/enterprise-value/')
   end
 
-  def fmp_metrics 
-    URI.parse("https://financialmodelingprep.com/api/v3/company-key-metrics/")
+  def fmp_metrics
+    URI.parse('https://financialmodelingprep.com/api/v3/company-key-metrics/')
   end
 
-  def fmp_rating 
-    URI.parse("https://financialmodelingprep.com/api/v3/company/rating/")
+  def fmp_rating
+    URI.parse('https://financialmodelingprep.com/api/v3/company/rating/')
   end
-
 end
+# rubocop:enable Metrics/PerceivedComplexity
