@@ -10,7 +10,14 @@ class WriteFinanacials
   include RequestHelper
 
   def write_statements(name)
-    write_json(name, financials)
+    filename = "data/#{name}_data.json"
+    file = File.open(filename, 'w')
+    file_age = Time.now - file.mtime
+    if file_age < 604_800
+      puts 'Financial statements are up-to-date'
+    else
+      write_json(name, financials)
+    end
   end
 
   private
@@ -28,7 +35,8 @@ class WriteFinanacials
   FMP_RATING = '/company/rating/'
 
   def write_json(type, hash)
-    File.open("data/#{type}_data.json", 'w') do |f|
+    filename = "data/#{type}_data.json"
+    File.open(filename, 'w') do |f|
       f.write(JSON.pretty_generate(hash, indent: "\t", object_nl: "\n"))
     end
   end
