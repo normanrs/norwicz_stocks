@@ -2,9 +2,8 @@
 
 # rubocop:disable Metrics/PerceivedComplexity
 
-require 'net/http'
-require 'uri'
 require 'json'
+require 'net/http'
 require_relative 'request_helper'
 
 class WriteFinanacials
@@ -15,6 +14,18 @@ class WriteFinanacials
   end
 
   private
+
+  FMP_INCOME = '/financials/income-statement/'
+
+  FMP_CASHFLOW = '/financials/cash-flow-statement/'
+
+  FMP_RATIOS = '/financial-ratios/'
+
+  FMP_VALUE = '/enterprise-value/'
+
+  FMP_METRICS = '/company-key-metrics/'
+
+  FMP_RATING = '/company/rating/'
 
   def write_json(type, hash)
     File.open("data/#{type}_data.json", 'w') do |f|
@@ -68,11 +79,11 @@ class WriteFinanacials
 
   def financial_update(stock)
     new_financial = []
-    financial = api_call(fmp_financials, stock)
-    cashflow  = api_call(fmp_cashflow, stock)['financials'] || {}
-    ratios    = api_call(fmp_ratios, stock)['ratios'] || {}
-    values    = api_call(fmp_value, stock)['enterpriseValues'] || {}
-    metrics   = api_call(fmp_metrics, stock)['metrics'] || {}
+    financial = call_fmp(FMP_INCOME, stock)
+    cashflow  = call_fmp(FMP_CASHFLOW, stock)['financials'] || {}
+    ratios    = call_fmp(FMP_RATIOS, stock)['ratios'] || {}
+    values    = call_fmp(FMP_VALUE, stock)['enterpriseValues'] || {}
+    metrics   = call_fmp(FMP_METRICS, stock)['metrics'] || {}
     financial['financials'][0..3].each do |annual|
       cash   = cashflow.find { |r| r['date'] == annual['date'] } || {}
       ratio  = ratios.find { |r| r['date'] == annual['date'] } || {}
@@ -84,28 +95,5 @@ class WriteFinanacials
     new_financial
   end
 
-  def fmp_financials
-    URI.parse('https://financialmodelingprep.com/api/v3/financials/income-statement/')
-  end
-
-  def fmp_cashflow
-    URI.parse('https://financialmodelingprep.com/api/v3/financials/cash-flow-statement/')
-  end
-
-  def fmp_ratios
-    URI.parse('https://financialmodelingprep.com/api/v3/financial-ratios/')
-  end
-
-  def fmp_value
-    URI.parse('https://financialmodelingprep.com/api/v3/enterprise-value/')
-  end
-
-  def fmp_metrics
-    URI.parse('https://financialmodelingprep.com/api/v3/company-key-metrics/')
-  end
-
-  def fmp_rating
-    URI.parse('https://financialmodelingprep.com/api/v3/company/rating/')
-  end
 end
 # rubocop:enable Metrics/PerceivedComplexity
