@@ -13,6 +13,7 @@ class WriteFinanacials
     filename = "data/#{name}_data.json"
     file = File.open(filename, 'w')
     file_age = Time.now - file.mtime
+    # No need to update financials less than 1 week old
     if file_age < 604_800
       puts 'Financial statements are up-to-date'
     else
