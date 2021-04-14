@@ -2,6 +2,7 @@
 
 # rubocop:disable Metrics/PerceivedComplexity
 
+require 'csv'
 require 'json'
 require 'net/http'
 require_relative 'request_helper'
@@ -9,75 +10,56 @@ require_relative 'request_helper'
 class WriteFinanacials
   include RequestHelper
 
-  def write_statements(name)
-    filename = "data/#{name}_data.json"
-    file = File.open(filename, 'w')
+  FILENAME = "data/reit_data"
+  FMP_RATIOS = '/ratios-ttm/'
+  FMP_METRICS = '/key-metrics-ttm/'
+
+  def write_statements
+    files = Dir.foreach("data/")
+    reit_data = files.find { |item| item.include?('reit_data') }
+    update_reit_data({}) unless reit_data
+    file = File.open(FILENAME, 'w')
     file_age = Time.now - file.mtime
-    # No need to update financials less than 1 week old
-    if file_age < 604_800
+    # Do not update financials less than 1 day old
+    if file_age < 86_400
       puts 'Financial statements are up-to-date'
     else
-      write_json(name, financials)
+      existing_financials = JSON.parse(File.read(FILENAME), {})
+      update_reit_data(existing_financials)
     end
   end
 
   private
 
-  FMP_INCOME = '/financials/income-statement/'
-
-  FMP_CASHFLOW = '/financials/cash-flow-statement/'
-
-  FMP_RATIOS = '/financial-ratios/'
-
-  FMP_VALUE = '/enterprise-value/'
-
-  FMP_METRICS = '/company-key-metrics/'
-
-  FMP_RATING = '/company/rating/'
-
-  def write_json(type, hash)
-    filename = "data/#{type}_data.json"
-    File.open(filename, 'w') do |f|
-      f.write(JSON.pretty_generate(hash, indent: "\t", object_nl: "\n"))
+  def update_reit_data(hash_in)
+    # FMP site limits calls with free membership, so this will
+    # write half the data one day and the rest another day
+    new_financials = {}
+    if Date.today.day.odd?
+      new_financials = financials(FMP_RATIOS)
+    else
+      new_financials = financials(FMP_METRICS)
     end
+    write_hash = hash_in.merge(new_financials)
+    write_json(write_hash)
   end
 
-  def stock_list
-    %w[
-      NRZ
-      GNL
-      PLYM
-      SBRA
-      STWD
-      CLNY
-      WSR
-      CIO
-      GMRE
-      LXP
-      APLE
-      SRC
-      GOOD
-      IRT
-      VER
-      BRG
-      APTS
-      EPD
-      MPW
-      MGP
-      SLM
-      COLD
-    ]
+  def write_json(hash_in)
+    filename = "data/reit_data.json"
+    File.open(filename, 'w') do |f|
+      f.write(JSON.pretty_generate(hash_in, indent: "\t", object_nl: "\n"))
+    end
   end
 
   def stocks
     stock_list.join(',')
   end
 
-  def financials
+  def financials(call)
     @financials ||= begin
       responses = []
       stock_list.each do |stock|
-        new_hash = { 'symbol' => stock, 'financials' => financial_update(stock) }
+        new_hash = { stock => financial_update(stock, call) }
         responses << new_hash
       rescue StandardError => e
         puts "Error building #{stock} data: #{e.message}"
@@ -86,22 +68,191 @@ class WriteFinanacials
     end
   end
 
-  def financial_update(stock)
-    new_financial = []
-    financial = call_fmp(FMP_INCOME, stock)
-    cashflow  = call_fmp(FMP_CASHFLOW, stock)['financials'] || {}
-    ratios    = call_fmp(FMP_RATIOS, stock)['ratios'] || {}
-    values    = call_fmp(FMP_VALUE, stock)['enterpriseValues'] || {}
-    metrics   = call_fmp(FMP_METRICS, stock)['metrics'] || {}
-    financial['financials'][0..3].each do |annual|
-      cash   = cashflow.find { |r| r['date'] == annual['date'] } || {}
-      ratio  = ratios.find { |r| r['date'] == annual['date'] } || {}
-      value  = values.find { |r| r['date'] == annual['date'] } || {}
-      metric = metrics.find { |r| r['date'] == annual['date'] } || {}
-      annual.merge!(cash).merge!(ratio).merge!(value).merge!(metric)
-      new_financial << annual
-    end
-    new_financial
+  def financial_update(stock, call)
+    call_fmp(call, stock) || {}
+  end
+
+  def stock_list
+    %w[
+    AAT
+    ACC
+    ADC
+    AFCG
+    AFIN
+    AHH
+    AHT
+    AIRC
+    AIV
+    AKR
+    ALEX
+    ALX
+    AMH
+    AMT
+    APLE
+    APTS
+    ARE
+    AVB
+    BDN
+    BFS
+    BHR
+    BNL
+    BPYU
+    BRG
+    BRT
+    BRX
+    BXP
+    CCI
+    CDOR
+    CDR
+    CHCT
+    CIO
+    CLDT
+    CLI
+    CLNY
+    CLPR
+    CMCT
+    COLD
+    CONE
+    COR
+    CORR
+    CPLG
+    CPT
+    CSR
+    CTRE
+    CTT
+    CUBE
+    CUZ
+    CXP
+    CXW
+    DEA
+    DEI
+    DHC
+    DLR
+    DOC
+    DRE
+    DRH
+    EGP
+    ELS
+    EPR
+    EQC
+    EQIX
+    EQR
+    ESRT
+    ESS
+    EXR
+    FCPT
+    FPI
+    FR
+    FRT
+    FSP
+    GEO
+    GLPI
+    GMRE
+    GNL
+    GOOD
+    GTY
+    HIW
+    HMG
+    HPP
+    HR
+    HST
+    HT
+    HTA
+    IIPR
+    ILPT
+    INN
+    INVH
+    IRM
+    IRT
+    JBGS
+    KIM
+    KRC
+    KRG
+    LAMR
+    LAND
+    LSI
+    LTC
+    LXP
+    MAA
+    MAC
+    MDRR
+    MGP
+    MNR
+    MPW
+    NHI
+    NNN
+    NSA
+    NTST
+    NXRT
+    NYC
+    O
+    OFC
+    OHI
+    OLP
+    OPI
+    OUT
+    PCH
+    PDM
+    PEAK
+    PEB
+    PEI
+    PGRE
+    PINE
+    PK
+    PLD
+    PSA
+    PSB
+    PW
+    QTS
+    REG
+    REXR
+    RHP
+    RLJ
+    ROIC
+    RPAI
+    RPT
+    RVI
+    RYN
+    SAFE
+    SBAC
+    SBRA
+    SELF
+    SHO
+    SITC
+    SKT
+    SLG
+    SOHO
+    SPG
+    SQFT
+    SRC
+    SRG
+    STAG
+    STOR
+    SUI
+    SVC
+    TRNO
+    UBA
+    UBP
+    UDR
+    UE
+    UHT
+    UMH
+    UNIT
+    VER
+    VICI
+    VNO
+    VTR
+    WELL
+    WHLR
+    WPC
+    WPG
+    WPTIF
+    WRE
+    WRI
+    WSR
+    WY
+    XHR
+  ]
   end
 
 end

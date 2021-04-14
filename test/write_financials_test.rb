@@ -14,6 +14,6 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_write_statements
-    @job.write_statements('fmp')
+    @job.write_statements
   end
 end
