@@ -6,9 +6,11 @@ require 'csv'
 require 'json'
 require 'net/http'
 require_relative 'request_helper'
+require_relative 'data_helper'
 
 class WriteFinanacials
   include RequestHelper
+  include DataHelper
 
   FILENAME = "data/reit_data.json"
   FMP_RATIOS = '/ratios-ttm/'
@@ -19,8 +21,7 @@ class WriteFinanacials
     update_reit_data({}) unless file_exists
     file_age = Time.now - File.ctime(FILENAME)
     # Do not update financials less than 1 day old or 86_400 seconds
-    require 'pry'; binding.pry
-    if file_age < 86_400
+    if file_age < 10
       puts 'Financial statements are up-to-date'
     else
       existing_financials = JSON.parse(File.read(FILENAME), {})
@@ -30,7 +31,7 @@ class WriteFinanacials
 
   private
 
-  def update_reit_data(hash_in)
+  def update_reit_data(existing_data)
     # FMP site limits calls with free membership, so this will
     # write half the data one day and the rest another day
     new_financials = {}
@@ -39,8 +40,11 @@ class WriteFinanacials
     else
       new_financials = financials(FMP_METRICS)
     end
-    write_hash = hash_in.merge(new_financials)
+    new_financials.each do |key, value|
+      new_financials[key].merge!(existing_data[key])
+    end
     require 'pry'; binding.pry
+    write_hash = new_financials
     write_json(write_hash)
   end
 
@@ -56,203 +60,15 @@ class WriteFinanacials
   end
 
   def financials(call)
-    @financials ||= begin
-      responses = []
-      stock_list.each do |stock|
-        new_hash = { stock => financial_update(stock, call) }
-        responses << new_hash
-      rescue StandardError => e
-        puts "Error building #{stock} data: #{e.message}"
-      end
-      responses
+    new_hash = {}
+    test_stock.each do |stock|
+      new_hash[stock] = financial_update(stock, call)
     end
+    new_hash
   end
 
   def financial_update(stock, call)
     call_fmp(call, stock) || {}
-  end
-
-  def stock_list
-    %w[
-    AAT
-    ACC
-    ADC
-    AFCG
-    AFIN
-    AHH
-    AHT
-    AIRC
-    AIV
-    AKR
-    ALEX
-    ALX
-    AMH
-    AMT
-    APLE
-    APTS
-    ARE
-    AVB
-    BDN
-    BFS
-    BHR
-    BNL
-    BPYU
-    BRG
-    BRT
-    BRX
-    BXP
-    CCI
-    CDOR
-    CDR
-    CHCT
-    CIO
-    CLDT
-    CLI
-    CLNY
-    CLPR
-    CMCT
-    COLD
-    CONE
-    COR
-    CORR
-    CPLG
-    CPT
-    CSR
-    CTRE
-    CTT
-    CUBE
-    CUZ
-    CXP
-    CXW
-    DEA
-    DEI
-    DHC
-    DLR
-    DOC
-    DRE
-    DRH
-    EGP
-    ELS
-    EPR
-    EQC
-    EQIX
-    EQR
-    ESRT
-    ESS
-    EXR
-    FCPT
-    FPI
-    FR
-    FRT
-    FSP
-    GEO
-    GLPI
-    GMRE
-    GNL
-    GOOD
-    GTY
-    HIW
-    HMG
-    HPP
-    HR
-    HST
-    HT
-    HTA
-    IIPR
-    ILPT
-    INN
-    INVH
-    IRM
-    IRT
-    JBGS
-    KIM
-    KRC
-    KRG
-    LAMR
-    LAND
-    LSI
-    LTC
-    LXP
-    MAA
-    MAC
-    MDRR
-    MGP
-    MNR
-    MPW
-    NHI
-    NNN
-    NSA
-    NTST
-    NXRT
-    NYC
-    O
-    OFC
-    OHI
-    OLP
-    OPI
-    OUT
-    PCH
-    PDM
-    PEAK
-    PEB
-    PEI
-    PGRE
-    PINE
-    PK
-    PLD
-    PSA
-    PSB
-    PW
-    QTS
-    REG
-    REXR
-    RHP
-    RLJ
-    ROIC
-    RPAI
-    RPT
-    RVI
-    RYN
-    SAFE
-    SBAC
-    SBRA
-    SELF
-    SHO
-    SITC
-    SKT
-    SLG
-    SOHO
-    SPG
-    SQFT
-    SRC
-    SRG
-    STAG
-    STOR
-    SUI
-    SVC
-    TRNO
-    UBA
-    UBP
-    UDR
-    UE
-    UHT
-    UMH
-    UNIT
-    VER
-    VICI
-    VNO
-    VTR
-    WELL
-    WHLR
-    WPC
-    WPG
-    WPTIF
-    WRE
-    WRI
-    WSR
-    WY
-    XHR
-  ]
   end
 
 end
