@@ -185,6 +185,6 @@ module DataHelper
   end
 
   def test_stock
-    %w[VER WRE]
+    %w[VER]
   end
 end
