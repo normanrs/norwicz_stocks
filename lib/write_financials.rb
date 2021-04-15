@@ -10,18 +10,19 @@ require_relative 'request_helper'
 class WriteFinanacials
   include RequestHelper
 
-  FILENAME = "data/reit_data"
+  FILENAME = "data/reit_data.json"
   FMP_RATIOS = '/ratios-ttm/'
   FMP_METRICS = '/key-metrics-ttm/'
 
   def write_statements
     files = Dir.foreach("data/")
-    reit_data = files.find { |item| item.include?('reit_data') }
+    reit_data = files.find { |item| item.include?('reit_data.json') }
     update_reit_data({}) unless reit_data
     file = File.open(FILENAME, 'w')
     file_age = Time.now - file.mtime
     # Do not update financials less than 1 day old
-    if file_age < 86_400
+    require 'pry'; binding.pry
+    if file_age < 1
       puts 'Financial statements are up-to-date'
     else
       existing_financials = JSON.parse(File.read(FILENAME), {})
@@ -41,6 +42,7 @@ class WriteFinanacials
       new_financials = financials(FMP_METRICS)
     end
     write_hash = hash_in.merge(new_financials)
+    require 'pry'; binding.pry
     write_json(write_hash)
   end
 

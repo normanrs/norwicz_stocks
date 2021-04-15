@@ -6,6 +6,7 @@ require './lib/analysis.rb'
 
 class AnalysisTest < Minitest::Test
   def setup
+    skip
     @analysis = Analysis.new
   end
 
