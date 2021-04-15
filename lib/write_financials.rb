@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/PerceivedComplexity
-
 require 'csv'
 require 'json'
 require 'net/http'
@@ -12,7 +10,7 @@ class WriteFinanacials
   include RequestHelper
   include DataHelper
 
-  FILENAME = "data/reit_data.json"
+  FILENAME = 'data/reit_data.json'
   FMP_RATIOS = '/ratios-ttm/'
   FMP_METRICS = '/key-metrics-ttm/'
 
@@ -21,7 +19,7 @@ class WriteFinanacials
     update_reit_data({}) unless file_exists
     file_age = Time.now - File.ctime(FILENAME)
     # Do not update financials less than 1 day old or 86_400 seconds
-    if file_age < 86_400
+    if file_age < 10
       puts 'Financial statements are up-to-date'
     else
       existing_financials = JSON.parse(File.read(FILENAME), {})
@@ -35,19 +33,21 @@ class WriteFinanacials
     # FMP site limits calls with free membership, so this will
     # write half the data one day and the rest another day
     new_financials = {}
-    if Date.today.day.odd?
-      new_financials = financials(FMP_RATIOS)
-    else
-      new_financials = financials(FMP_METRICS)
+    new_financials = if Date.today.day.odd?
+                       financials(FMP_RATIOS)
+                     else
+                       financials(FMP_METRICS)
+                     end
+    return unless new_financials.any?
+
+    existing_data.each do |key, _value|
+      existing_data[key].merge!(new_financials[key])
     end
-    new_financials.each do |key, value|
-      new_financials[key].merge!(existing_data[key])
-    end
-    write_json(new_financials)
+    write_json(existing_data)
   end
 
   def write_json(hash_in)
-    filename = "data/reit_data.json"
+    filename = 'data/reit_data.json'
     File.open(filename, 'w') do |f|
       f.write(JSON.pretty_generate(hash_in, indent: "\t", object_nl: "\n"))
     end
@@ -60,6 +60,9 @@ class WriteFinanacials
   def financials(call)
     new_hash = {}
     test_stock.each do |stock|
+      new_data = financial_update(stock, call)
+      next unless new_data.any?
+
       new_hash[stock] = financial_update(stock, call)
     end
     new_hash
@@ -68,6 +71,4 @@ class WriteFinanacials
   def financial_update(stock, call)
     call_fmp(call, stock) || {}
   end
-
 end
-# rubocop:enable Metrics/PerceivedComplexity

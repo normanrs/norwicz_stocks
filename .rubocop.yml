@@ -6,6 +6,9 @@ AllCops:
 Metrics/LineLength:
   Max: 150
 
+Metrics/ModuleLength:
+  Max: 600
+
 Metrics/MethodLength:
   Enabled: false
 
