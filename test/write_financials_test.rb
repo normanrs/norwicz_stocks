@@ -5,15 +5,15 @@ require 'minitest/pride'
 require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
-  def setup
-    @job = WriteFinanacials.new
-  end
-
-  def test_job_created
-    assert @job
-  end
+  def setup; end
 
   def test_write_statements
-    @job.write_statements
+    write_time = WriteFinancials.write_statements
+    assert_instance_of Time, write_time
+  end
+
+  def test_update_reit_data
+    updated_data = WriteFinancials.update_reit_data({})
+    assert_nil updated_data
   end
 end
