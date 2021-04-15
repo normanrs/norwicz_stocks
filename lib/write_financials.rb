@@ -15,14 +15,12 @@ class WriteFinanacials
   FMP_METRICS = '/key-metrics-ttm/'
 
   def write_statements
-    files = Dir.foreach("data/")
-    reit_data = files.find { |item| item.include?('reit_data.json') }
-    update_reit_data({}) unless reit_data
-    file = File.open(FILENAME, 'w')
-    file_age = Time.now - file.mtime
-    # Do not update financials less than 1 day old
+    file_exists = File.exist?(FILENAME)
+    update_reit_data({}) unless file_exists
+    file_age = Time.now - File.ctime(FILENAME)
+    # Do not update financials less than 1 day old or 86_400 seconds
     require 'pry'; binding.pry
-    if file_age < 1
+    if file_age < 86_400
       puts 'Financial statements are up-to-date'
     else
       existing_financials = JSON.parse(File.read(FILENAME), {})
