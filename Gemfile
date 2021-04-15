@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'aws-sdk-s3', '~> 1.67.1'
 gem 'dotenv', '~> 2.7.6'
 gem 'faraday', '~> 0.17.3'
 gem 'faraday_middleware'
