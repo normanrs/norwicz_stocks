@@ -17,27 +17,20 @@ module RequestHelper
     respond
   end
 
-  def api_call(url, stock)
-    uri = url + stock
+  def api_call(uri)
     request = Net::HTTP::Get.new(uri)
     request['Upgrade-Insecure-Requests'] = '1'
     req_options = { use_ssl: uri.scheme == 'https' }
     response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
       http.request(request)
     end
-    puts "#{stock} #{url.path} returned #{response.code}"
-    JSON.parse(response.body)
+    response
   end
 
   def call_fmp(path, stock)
     site = 'https://financialmodelingprep.com/api/v3'
     uri = URI.parse(site + path + stock + "?apikey=#{ENV['TOKEN_FMP']}")
-    request = Net::HTTP::Get.new(uri)
-    request['Upgrade-Insecure-Requests'] = '1'
-    req_options = { use_ssl: uri.scheme == 'https' }
-    response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-      http.request(request)
-    end
+    response = api_call(uri)
     puts "#{stock} #{path} returned #{response.code}"
     JSON.parse(response.body)
   end

@@ -21,7 +21,7 @@ class WriteFinanacials
     update_reit_data({}) unless file_exists
     file_age = Time.now - File.ctime(FILENAME)
     # Do not update financials less than 1 day old or 86_400 seconds
-    if file_age < 10
+    if file_age < 86_400
       puts 'Financial statements are up-to-date'
     else
       existing_financials = JSON.parse(File.read(FILENAME), {})
@@ -43,9 +43,7 @@ class WriteFinanacials
     new_financials.each do |key, value|
       new_financials[key].merge!(existing_data[key])
     end
-    require 'pry'; binding.pry
-    write_hash = new_financials
-    write_json(write_hash)
+    write_json(new_financials)
   end
 
   def write_json(hash_in)
