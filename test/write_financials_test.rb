@@ -2,6 +2,7 @@
 
 require 'minitest/autorun'
 require 'minitest/pride'
+require './test/test_helper.rb'
 require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
