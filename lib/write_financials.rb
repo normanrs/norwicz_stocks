@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'aws-sdk-s3'
+require 'deep_merge'
 require 'csv'
 require 'json'
 require 'net/http'
@@ -42,9 +43,7 @@ class WriteFinancials
                        end
       return unless new_financials.any?
 
-      existing_data.each do |key, _value|
-        existing_data[key].merge!(new_financials[key])
-      end
+      existing_data.deep_merge!(new_financials)
       write_json(existing_data)
       push_to_s3(FILENAME)
     end
