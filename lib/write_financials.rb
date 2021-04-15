@@ -35,7 +35,6 @@ class WriteFinancials
     def update_reit_data(existing_data)
       # FMP site limits calls with free membership, so this will
       # write half the data one day and the rest another day
-      new_financials = {}
       new_financials = if Date.today.day.odd?
                          financials(FMP_RATIOS)
                        else
@@ -78,6 +77,5 @@ class WriteFinancials
       obj = s3.bucket(BUCKET).object(path_filename.to_s)
       obj.upload_file(path_filename.to_s)
     end
-
   end
 end
