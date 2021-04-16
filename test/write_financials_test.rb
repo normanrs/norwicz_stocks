@@ -13,8 +13,4 @@ class WriteFinancialsTest < Minitest::Test
     assert_instance_of Time, write_time
   end
 
-  def test_update_reit_data
-    updated_data = WriteFinancials.update_reit_data({})
-    assert_nil updated_data
-  end
 end
