@@ -12,9 +12,10 @@ class WriteFinancials
   class << self
     include RequestHelper
     include DataHelper
+    extend DataHelper
 
-    BUCKET = ENV['AWS_BUCKET']
-    FILENAME = 'data/reit_data.json'
+    BUCKET = config.dig('bucket')
+    FILENAME = config.dig('filename')
     FMP_RATIOS = '/ratios-ttm/'
     FMP_METRICS = '/key-metrics-ttm/'
 
@@ -44,11 +45,7 @@ class WriteFinancials
 
       existing_data.deep_merge!(new_financials)
       write_json(existing_data)
-      push_to_s3(FILENAME)
-    end
-
-    def stocks
-      stock_list.join(',')
+      push_to_s3(FILENAME) unless ARGV.include?('local')
     end
 
     def financials(call)
@@ -79,3 +76,5 @@ class WriteFinancials
     end
   end
 end
+
+# WriteFinancials.write_statements
