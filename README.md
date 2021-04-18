@@ -18,11 +18,17 @@ You will also need:
 2. `bundle install` to install gem dependencies
 2. `rake` to run all project tests OR `rake local` to skip attempting to write to AWS S3 bucket.
 
+## Discussion
+REIT (real estate investment trusts) ETFs (exchange-traded funds) are a special class of stock. They have numerous legal requirements that go above and beyond those for other stocks, restricting the extent to which they must be backed by assets and the percent of revenue they must return to investors in the form of dividends. This and the inherent value of real estate make them a particularly attractive investement in that they can be safer and yet still high-performing as compared to other stock types.
+But in that they operate differently than other stocks they are also more difficult to evaluate in terms of price-to-performance. The normal metrics, such as price to earnings ration (P/E) or price to earnings growth (PEG) aren't good signals of a strong REIT. This app attempts to collect data that, when analyzed properly, CAN help determine if an REIT is worth investing in.
+TTM (trailing twelve months) data is consistently used in an effort to evaluate the REIT over recent history, not just by its latest numbers or over the life of the trust.
+
 ## References
 The API the app gets data from:
 - [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
 
 Also referenced:  
+- [Investopedia](https://www.investopedia.com/terms/r/reit.asp)
 - [SEC Edgar](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 - [Gurufocus Financials](https://www.gurufocus.com/download_financials_batch.php)
 - [Seeking Alpha](https://seekingalpha.com/symbol/SPG)
