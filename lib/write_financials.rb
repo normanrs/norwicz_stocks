@@ -20,13 +20,15 @@ class WriteFinancials
     FMP_METRICS = '/key-metrics-ttm/'
 
     def write_statements
-      file_exists = File.exist?(FILENAME)
-      update_reit_data({}) unless file_exists
-      file_age = Time.now - File.mtime(FILENAME)
-      # Do not update financials less than 1 day old or 86_400 seconds
-      if file_age < 86_400
+      if !File.exist?(FILENAME)
+        # Force update to populate all data
+        puts 'Writing new financial statements'
+        update_reit_data({})
+      elsif (Time.now - File.mtime(FILENAME)) < 86_400
+        # Do not update financials less than 1 day old or 86_400 seconds
         puts 'Financial statements are up-to-date'
       else
+        puts 'Updating existing financial data'
         existing_financials = JSON.parse(File.read(FILENAME), {})
         update_reit_data(existing_financials)
       end
