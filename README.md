@@ -28,6 +28,7 @@ The API the app gets data from:
 - [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs/)
 
 Also referenced:  
+- [Investopedia](https://www.investopedia.com/terms/r/reit.asp)
 - [SEC Edgar](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 - [Gurufocus Financials](https://www.gurufocus.com/download_financials_batch.php)
 - [Seeking Alpha](https://seekingalpha.com/symbol/SPG)
