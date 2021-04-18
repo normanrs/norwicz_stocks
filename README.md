@@ -16,7 +16,7 @@ You will also need:
 ## Instructions:
 1. Clone this repo.
 2. `bundle install` to install gem dependencies
-2. `rake` to run all project tests
+2. `rake` to run all project tests OR `rake local` to skip attempting to write to AWS S3 bucket.
 
 ## References
 The API the app gets data from:
