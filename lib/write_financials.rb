@@ -36,18 +36,24 @@ class WriteFinancials
     end
 
     def update_reit_data(existing_data)
-      # FMP site limits calls with free membership, so this will
-      # write half the data one day and the rest another day
-      new_financials = if Date.today.day.odd?
-                         financials(FMP_RATIOS)
-                       else
-                         financials(FMP_METRICS)
-                       end
-      return unless new_financials.any?
-
-      existing_data.deep_merge!(new_financials)
+      write_data = merge_hashes(existing_data, new_financials)
       write_json(existing_data)
       push_to_s3(FILENAME) unless ARGV.include?('local')
+    end
+
+    def merge_hashes(hash1, hash2)
+      hash1.deep_merge(hash2)
+    end
+
+    def new_financials
+      # FMP site limits calls with free membership, so this will
+      # write half the data one day and the rest another day
+      if Date.today.day.odd?
+        found = financials(FMP_RATIOS)
+      else
+        found = financials(FMP_METRICS)
+      end
+      return unless found.any?
     end
 
     def financials(call)
@@ -56,7 +62,7 @@ class WriteFinancials
         new_data = financial_update(stock, call)
         next unless new_data.any?
 
-        new_hash[stock] = financial_update(stock, call)
+        new_hash[stock] = new_data
       end
       new_hash
     end
