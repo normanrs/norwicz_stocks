@@ -9,9 +9,7 @@ class DataHelperTest < Minitest::Test
   include DataHelper
   extend DataHelper
 
-  def setup
-    env_config = 'dev'
-  end
+  def setup; end
 
   def test_stock_list
     test_method = stock_list
@@ -37,5 +35,4 @@ class DataHelperTest < Minitest::Test
     test_method = config
     assert_instance_of Hash, test_method
   end
-
 end

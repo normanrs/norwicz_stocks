@@ -1,9 +1,9 @@
 # frozen_string_literal: true
+
 require 'csv'
 require 'yaml'
 
 module DataHelper
-
   def stock_list
     if env_config == 'dev'
       ['VER']
@@ -22,7 +22,6 @@ module DataHelper
   end
 
   def env_config
-    @env ||= ENV['CONFIG'] || 'dev'
+    @env_config ||= ENV['CONFIG'] || 'dev'
   end
-
 end

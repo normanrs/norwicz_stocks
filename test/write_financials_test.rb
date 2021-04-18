@@ -14,10 +14,9 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_merge_hashes
-    hash1 = { 'AAT' => { 'wth' => 11 }}
-    hash2 = { 'AAT' => { 'wtf' => 42 }}
+    hash1 = { 'AAT' => { 'wth' => 11 } }
+    hash2 = { 'AAT' => { 'wtf' => 42 } }
     test_method = WriteFinancials.merge_hashes(hash1, hash2)
     assert test_method['AAT'].count == 2
   end
-
 end
