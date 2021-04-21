@@ -6,7 +6,7 @@ require 'yaml'
 module DataHelper
   def stock_list
     if env_config == 'dev'
-      ['VER']
+      ['AAPL']
     else
       reits
     end

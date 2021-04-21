@@ -48,12 +48,12 @@ class WriteFinancials
     def new_financials
       # FMP site limits calls with free membership, so this will
       # write half the data one day and the rest another day
-      found = if Date.today.day.odd?
-                financials(FMP_RATIOS)
-              else
-                financials(FMP_METRICS)
-              end
-      return unless found.any?
+      case Date.today.day
+      when odd?
+        financials(FMP_RATIOS)
+      else
+        financials(FMP_METRICS)
+      end
     end
 
     def financials(call)
@@ -78,6 +78,7 @@ class WriteFinancials
     end
 
     def push_to_s3(path_filename)
+      puts "Writing #{path_filename} to S3 bucket"
       s3 = Aws::S3::Resource.new(region: 'us-east-1')
       obj = s3.bucket(BUCKET).object(path_filename.to_s)
       obj.upload_file(path_filename.to_s)
