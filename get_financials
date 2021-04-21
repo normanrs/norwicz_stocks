@@ -1,0 +1,8 @@
+#! /bin/sh
+
+EXIT_CODE=0
+
+export CONFIG=prd
+bundle exec ruby get_financials.rb || EXIT_CODE=$?
+
+exit $EXIT_CODE
