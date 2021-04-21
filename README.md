@@ -1,22 +1,24 @@
 # norwicz_stocks
 A simple app to gather financial data on reits and export them to an S3 bucket.
 
-## Setup:
-You will need the following environment variables available to run the app.
-
-- TOKEN_FMP (Obtained from the Financial Modeling Prep API listed below)
-- AWS_ACCESS_KEY_ID (Obtained from Amazon Web Services)
-- AWS_BUCKET (Also Amazon)
-- AWS_SECRET_ACCESS_KEY (Amazon once again)
-
-You will also need:
+## Requirements
 - Ruby 2.6.6
 - Bundler 2.2.7
 
-## Instructions:
+## Setup:
 1. Clone this repo.
 2. `bundle install` to install gem dependencies
-2. `rake` to run all project tests OR `rake local` to skip attempting to write to AWS S3 bucket.
+3. Save the following environment variables to a token.env file stored in the project root directory.
+- TOKEN_FMP (Obtained from the Financial Modeling Prep API listed below)
+- AWS_ACCESS_KEY_ID (Obtained from Amazon Web Services)
+- AWS_SECRET_ACCESS_KEY (Amazon once again)
+4. Add your bucket address to the config.yml file.
+
+## Run tests:
+`bundle exec rake` will run all application tests.
+
+## Run the app:
+`./get_financials` will write financials (for reals).
 
 ## Discussion
 REIT (real estate investment trusts) ETFs (exchange-traded funds) are a special class of stock. They have numerous legal requirements that go above and beyond those for other stocks, restricting the extent to which they must be backed by assets and the percent of revenue they must return to investors in the form of dividends. This and the inherent value of real estate make them a particularly attractive investement in that they can be safer and yet still high-performing as compared to other stock types.
