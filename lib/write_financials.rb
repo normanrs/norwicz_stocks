@@ -38,7 +38,7 @@ class WriteFinancials
     def update_reit_data(existing_data)
       write_data = merge_hashes(existing_data, new_financials)
       write_json(write_data)
-      push_to_s3(FILENAME) unless ARGV.include?('local')
+      push_to_s3(FILENAME) if config.dig('s3_write')
     end
 
     def merge_hashes(hash1, hash2)
@@ -48,8 +48,9 @@ class WriteFinancials
     def new_financials
       # FMP site limits calls with free membership, so this will
       # write half the data one day and the rest another day
-      case Date.today.day
-      when odd?
+      day = Date.today.day
+      case day
+      when day.odd?
         financials(FMP_RATIOS)
       else
         financials(FMP_METRICS)
