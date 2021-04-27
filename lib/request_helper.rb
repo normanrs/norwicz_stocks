@@ -35,9 +35,18 @@ module RequestHelper
     puts "#{stock} #{path} returned #{response.code}"
     if response.code == '200'
       raw = JSON.parse(response.body).first
-      raw.transform_keys { |key| key.to_s.downcase }
+      fmp_clean(raw)
     else
       {}
     end
+  end
+
+  def fmp_clean(raw_data)
+    result = raw_data.transform_keys { |key| key.to_s.downcase }
+    result.delete('inventoryturnoverttm')
+    result.delete('researchanddevelopementtorevenuettm')
+    result.delete('daysofinventoryonhandttm')
+    result.delete('averageinventoryttm')
+    result
   end
 end

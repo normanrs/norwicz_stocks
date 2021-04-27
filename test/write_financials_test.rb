@@ -19,4 +19,9 @@ class WriteFinancialsTest < Minitest::Test
     test_method = WriteFinancials.merge_hashes(hash1, hash2)
     assert test_method['AAT'].count == 2
   end
+
+  def test_top_picks
+    test_method = WriteFinancials.top_picks
+    refute_empty test_method
+  end
 end

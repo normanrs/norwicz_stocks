@@ -20,6 +20,16 @@ class WriteFinancials
     FMP_METRICS = '/key-metrics-ttm/'
     DAY = Date.today.day
 
+    def top_picks
+      financial_data = JSON.parse(File.read('data/reit_data.json'), {})
+      top_stocks = financial_data.select do |key, value|
+        value['dividendYieldTTM'].to_f > 0.05 &&
+          value['roeTTM'].to_f > 0.10
+      end.keys
+      write_json('data/top_stocks.json', top_stocks)
+      top_stocks
+    end
+
     def write_statements
       if !File.exist?(FILENAME)
         # Force update to populate all data
