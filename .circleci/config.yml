@@ -12,3 +12,4 @@ jobs:
           version: '2.6.6'
       - run: echo "Ruby 2.6.6 has been installed"
       - ruby/install-deps
+      - run: bundle exec rake 
