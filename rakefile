@@ -10,7 +10,7 @@ end
 
 task default: "test"
 tests_num = Dir["test/*_test.rb"].count
-# puts "** Running #{tests_num} tests **"
+puts "** Running #{tests_num} test files **"
 Rake::TestTask.new do |task|
   task.pattern = "test/*_test.rb"
 end

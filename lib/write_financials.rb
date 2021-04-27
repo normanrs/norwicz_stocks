@@ -18,15 +18,16 @@ class WriteFinancials
     FILENAME = config.dig('filename')
     FMP_RATIOS = '/ratios-ttm/'
     FMP_METRICS = '/key-metrics-ttm/'
+    DAY = Date.today.day
 
     def write_statements
       if !File.exist?(FILENAME)
         # Force update to populate all data
-        puts 'Writing new financial statements'
+        puts 'Getting new financial data'
         update_reit_data({})
       elsif (Time.now - File.mtime(FILENAME)) < 86_400
         # Do not update financials less than 1 day old or 86_400 seconds
-        puts 'Financial statements are up-to-date'
+        puts 'Financial data is up-to-date'
       else
         puts 'Updating existing financial data'
         existing_financials = JSON.parse(File.read(FILENAME), {})
@@ -37,7 +38,7 @@ class WriteFinancials
 
     def update_reit_data(existing_data)
       write_data = merge_hashes(existing_data, new_financials)
-      write_json(write_data)
+      write_json(FILENAME, write_data)
       write_csv(write_data)
       push_to_s3('data') if config.dig('s3_write')
     end
@@ -49,13 +50,7 @@ class WriteFinancials
     def new_financials
       # FMP site limits calls with free membership, so this will
       # write half the data one day and the rest another day
-      day = Date.today.day
-      case day
-      when day.odd?
-        financials(FMP_RATIOS)
-      else
-        financials(FMP_METRICS)
-      end
+      DAY.odd? ? financials(FMP_RATIOS) : financials(FMP_METRICS)
     end
 
     def financials(call)
@@ -70,11 +65,15 @@ class WriteFinancials
     end
 
     def financial_update(stock, call)
-      call_fmp(call, stock) || {}
+      data_type = DAY.odd? ? 'ratios' : 'metrics'
+      result = call_fmp(call, stock) || {}
+      write_json("tmp/#{data_type}-#{stock}.json", result)
+      result
     end
 
-    def write_json(hash_in)
-      File.open(FILENAME, 'w') do |f|
+    def write_json(filename, hash_in)
+      puts "Writing #{filename}"
+      File.open(filename, 'w') do |f|
         f.write(JSON.pretty_generate(hash_in, indent: "\t", object_nl: "\n"))
       end
     end

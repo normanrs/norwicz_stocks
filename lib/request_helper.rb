@@ -33,6 +33,11 @@ module RequestHelper
     uri = URI.parse(site + path + stock + "?apikey=#{fmp_key}")
     response = api_call(uri)
     puts "#{stock} #{path} returned #{response.code}"
-    response.code == '200' ? JSON.parse(response.body).first : {}
+    if response.code == '200'
+      raw = JSON.parse(response.body).first
+      raw.transform_keys { |key| key.to_s.downcase }
+    else
+      {}
+    end
   end
 end
