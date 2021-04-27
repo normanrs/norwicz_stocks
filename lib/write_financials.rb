@@ -50,7 +50,6 @@ class WriteFinancials
       write_data = merge_hashes(existing_data, new_financials)
       write_json(FILENAME, write_data)
       write_csv(write_data)
-      push_to_s3('data') if config.dig('s3_write')
     end
 
     def merge_hashes(hash1, hash2)
