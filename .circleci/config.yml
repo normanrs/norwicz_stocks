@@ -3,7 +3,7 @@ orbs:
   ruby: circleci/ruby@1.1.2
 
 jobs:
-  build:
+  update_data:
     docker:
       - image: 'cimg/base:stable'
     steps:
@@ -18,7 +18,7 @@ workflows:
   version: 2
   update:
     jobs:
-      - build
+      - update_data
     triggers:
       - schedule:
           cron: "0 0 * * *"
