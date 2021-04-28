@@ -3,16 +3,6 @@ orbs:
   ruby: circleci/ruby@1.1.2
 
 jobs:
-  update_data:
-    docker:
-      - image: 'cimg/base:stable'
-    steps:
-      - checkout
-      - ruby/install:
-          version: '2.6.6'
-      - run: echo "Ruby 2.6.6 has been installed"
-      - ruby/install-deps
-      - run: ./get_financials
   build:
     docker:
       - image: 'cimg/base:stable'
@@ -22,17 +12,12 @@ jobs:
           version: '2.6.6'
       - run: echo "Ruby 2.6.6 has been installed"
       - ruby/install-deps
-      - run: rake
+      - run: ./get_financials
 
-workflows:
-  version: 2.1
-  update:
-    jobs:
-      - update_data
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
+triggers:
+  - schedule:
+      cron: "0 0 * * *"
+      filters:
+        branches:
+          only:
+            - master
