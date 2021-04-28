@@ -15,7 +15,7 @@ jobs:
       - run: ./get_financials
 
 workflows:
-  version: 2
+  version: 2.1
   update:
     jobs:
       - update_data
