@@ -13,3 +13,16 @@ jobs:
       - run: echo "Ruby 2.6.6 has been installed"
       - ruby/install-deps
       - run: ./get_financials
+
+workflows:
+  version: 2
+  update:
+    jobs:
+      - build
+    triggers:
+      - schedule:
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - master
