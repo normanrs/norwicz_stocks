@@ -12,12 +12,31 @@ jobs:
           version: '2.6.6'
       - run: echo "Ruby 2.6.6 has been installed"
       - ruby/install-deps
+      - run: rake
+  run_update:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - ruby/install:
+          version: '2.6.6'
+      - run: echo "Ruby 2.6.6 has been installed"
+      - ruby/install-deps
       - run: ./get_financials
 
-triggers:
-  - schedule:
-      cron: "20 * * * *"
-      filters:
-        branches:
-          only:
-            - master
+workflows:
+  pull_request:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: master
+  update:
+    jobs:
+      - run_update
+    triggers:
+      - schedule:
+          cron: "45,50 * * * *"
+          filters:
+            branches:
+              only: master
