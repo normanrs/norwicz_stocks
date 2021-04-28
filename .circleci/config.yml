@@ -13,6 +13,16 @@ jobs:
       - run: echo "Ruby 2.6.6 has been installed"
       - ruby/install-deps
       - run: ./get_financials
+  build:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - ruby/install:
+          version: '2.6.6'
+      - run: echo "Ruby 2.6.6 has been installed"
+      - ruby/install-deps
+      - run: rake
 
 workflows:
   version: 2.1
