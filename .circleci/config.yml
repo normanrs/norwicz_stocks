@@ -37,7 +37,7 @@ workflows:
       - run_update
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "15 10 * * *"
           filters:
             branches:
               only: master
