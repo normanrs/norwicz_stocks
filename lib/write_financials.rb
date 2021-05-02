@@ -14,40 +14,40 @@ class WriteFinancials
     extend DataHelper
 
     BUCKET = config.dig('bucket')
-    FILENAME = config.dig('filename')
+    FILESOURCE = config.dig('filesource')
     FMP_ODD_DAY = '/key-metrics-ttm/'
     FMP_EVEN_DAY = '/rating/'
     DAY = Date.today.day
 
     def top_picks
-      financial_data = JSON.parse(File.read(FILENAME), {})
+      stock_data = JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
       top_stocks = {
-        reits: top_reits(financial_data)
+        reits: top_reits(stock_data)
       }
       write_json('data/top_stocks.json', top_stocks)
       top_stocks
     end
 
     def write_statements
-      if !File.exist?(FILENAME)
+      if !File.exist?("#{FILESOURCE}stock_data.json")
         # Force update to populate all data
         puts 'Getting new financial data'
         update_stock_data({})
-      elsif (Time.now - File.mtime(FILENAME)) < 86_400
+      elsif (Time.now - File.mtime("#{FILESOURCE}stock_data.json")) < 86_400
         # Do not update financials less than 1 day old or 86_400 seconds
         puts 'Financial data is up-to-date'
       else
         puts 'Updating existing financial data'
-        existing_financials = JSON.parse(File.read(FILENAME), {})
+        existing_financials = JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
         update_stock_data(existing_financials)
       end
-      File.mtime(FILENAME)
+      File.mtime("#{FILESOURCE}stock_data.json")
     end
 
     def update_stock_data(existing_data)
       existing_data.transform_keys! { |key| key.to_s.downcase }
       write_data = merge_hashes(existing_data, new_financials)
-      write_json(FILENAME, write_data)
+      write_json("#{FILESOURCE}stock_data.json", write_data)
       write_csv(write_data)
     end
 

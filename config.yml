@@ -1,10 +1,10 @@
 # Update the bucket value with your AWS S3 bucket address
 dev: &dev
   bucket: arn:aws:s3:us-east-1:229053409903:accesspoint/norwicz
-  filename: tmp/stock_data.json
+  filesource: test/data/
   s3_write: false
 
 prd: &prd
   bucket: arn:aws:s3:us-east-1:229053409903:accesspoint/norwicz
-  filename: data/stock_data.json
+  filesource: data/
   s3_write: true
