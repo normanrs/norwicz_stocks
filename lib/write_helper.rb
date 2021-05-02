@@ -12,9 +12,9 @@ module WriteHelper
     end
   end
 
-  def write_csv(hash_in)
+  def write_csv(filename, hash_in)
     headers = hash_in.values.first.keys.unshift('TICKER')
-    CSV.open('data/stock_data.csv', 'wb', write_headers: true, headers: headers) do |csv|
+    CSV.open(filename, 'wb', write_headers: true, headers: headers) do |csv|
       hash_in.each do |key, data|
         csv << data.values.unshift(key)
       end

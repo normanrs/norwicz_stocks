@@ -34,11 +34,27 @@ module RequestHelper
   end
 
   def fmp_clean(raw_data)
-    result = raw_data.transform_keys { |key| key.to_s.downcase }
-    result.delete('inventoryturnoverttm')
-    result.delete('researchanddevelopementtorevenuettm')
-    result.delete('daysofinventoryonhandttm')
+    raw_data.transform_keys! { |key| key.to_s.downcase }
+    result = raw_data.sort_by { |key, _value| key }.to_h
     result.delete('averageinventoryttm')
+    result.delete('date')
+    result.delete('daysofinventoryonhandttm')
+    result.delete('inventoryturnoverttm')
+    result.delete('rating')
+    result.delete('ratingdetailsdcfrecommendation')
+    result.delete('ratingdetailsdcfscore')
+    result.delete('ratingdetailsderecommendation')
+    result.delete('ratingdetailsdescore')
+    result.delete('ratingdetailspbrecommendation')
+    result.delete('ratingdetailspbscore')
+    result.delete('ratingdetailsperecommendation')
+    result.delete('ratingdetailspescore')
+    result.delete('ratingdetailsroarecommendation')
+    result.delete('ratingdetailsroascore')
+    result.delete('ratingdetailsroerecommendation')
+    result.delete('ratingdetailsroescore')
+    result.delete('researchanddevelopementtorevenuettm')
+    result.delete('symbol')
     result
   end
 end

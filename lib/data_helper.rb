@@ -26,11 +26,12 @@ module DataHelper
   end
 
   def top_reit?(hash_in)
-    hash_in.dig('dividendYieldPercentageTTM').to_f > 5.0 &&
-      hash_in.dig('netIncomePerShareTTM').to_f.positive? &&
+    hash_in.dig('netIncomePerShareTTM').to_f.positive? &&
       hash_in.dig('freeCashFlowPerShareTTM').to_f.positive? &&
-      hash_in.dig('netDebtToEBITDATTM').to_f.between?(0.0, 15.0) &&
-      hash_in.dig('payoutRatioTTM').to_f > 0.4 &&
+      hash_in.dig('netCurrentAssetValueTTM').to_f > -50.0 &&
+      hash_in.dig('netDebtToEBITDATTM').to_f.between?(-1.0, 15.0) &&
+      hash_in.dig('dividendYieldPercentageTTM').to_f > 4.8 &&
+      hash_in.dig('payoutRatioTTM').to_f.between?(0.2, 2.1) &&
       hash_in.dig('interestCoverageTTM').to_f > 1.3
   end
 
