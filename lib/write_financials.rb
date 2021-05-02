@@ -15,8 +15,8 @@ class WriteFinancials
 
     BUCKET = config.dig('bucket')
     FILENAME = config.dig('filename')
-    FMP_RATIOS = '/ratios-ttm/'
-    FMP_METRICS = '/key-metrics-ttm/'
+    FMP_ODD_DAY = '/key-metrics-ttm/'
+    FMP_EVEN_DAY = '/rating/'
     DAY = Date.today.day
 
     def top_picks
@@ -58,13 +58,13 @@ class WriteFinancials
     def new_financials
       # FMP site limits calls with free membership, so this will
       # write half the data one day and the rest another day
-      DAY.odd? ? financials(FMP_RATIOS) : financials(FMP_METRICS)
+      DAY.odd? ? financials(FMP_ODD_DAY) : financials(FMP_EVEN_DAY)
     end
 
     def financials(call)
       new_hash = {}
       stock_list.each do |stock|
-        new_data = financial_update(stock, call)
+        new_data = call_fmp(call, stock)
         next unless new_data.any?
 
         new_hash[stock] = new_data
@@ -72,11 +72,5 @@ class WriteFinancials
       new_hash
     end
 
-    def financial_update(stock, call)
-      data_type = DAY.odd? ? 'ratios' : 'metrics'
-      result = call_fmp(call, stock) || {}
-      write_json("tmp/#{data_type}-#{stock}.json", result)
-      result
-    end
   end
 end

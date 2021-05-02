@@ -34,11 +34,12 @@ module RequestHelper
   end
 
   def fmp_clean(raw_data)
-    result = raw_data.transform_keys { |key| key.to_s.downcase }
+    raw_data.transform_keys! { |key| key.to_s.downcase }
+    result = raw_data.sort_by { |key, _value| key }.to_h
+    result.delete('averageinventoryttm')
+    result.delete('daysofinventoryonhandttm')
     result.delete('inventoryturnoverttm')
     result.delete('researchanddevelopementtorevenuettm')
-    result.delete('daysofinventoryonhandttm')
-    result.delete('averageinventoryttm')
     result
   end
 end
