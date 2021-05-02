@@ -47,6 +47,7 @@ class WriteFinancials
     end
 
     def update_reit_data(existing_data)
+      existing_data.transform_keys! { |key| key.to_s.downcase }
       write_data = merge_hashes(existing_data, new_financials)
       write_json(FILENAME, write_data)
       write_csv(write_data)
