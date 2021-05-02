@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'simplecov'
 SimpleCov.start
 
@@ -12,8 +14,8 @@ def sample_fmp_data
     "tangibleBookValuePerShareTTM": 46.51154179021537,
     "shareholdersEquityPerShareTTM": 21.208000426347795,
     "interestDebtPerShareTTM": 24.356385388046967,
-    "marketCapTTM": 2046729017.7,
-    "enterpriseValueTTM": 3316147017.7,
+    "marketCapTTM": 2_046_729_017.7,
+    "enterpriseValueTTM": 3_316_147_017.7,
     "peRatioTTM": 73.99598762472885,
     "priceToSalesRatioTTM": 5.939899579189316,
     "pocfratioTTM": 16.117880203961096,
@@ -46,12 +48,12 @@ def sample_fmp_data
     "roicTTM": 0.03381291037007885,
     "returnOnTangibleAssetsTTM": 0.009919610273359499,
     "grahamNetNetTTM": -23.708782105669368,
-    "workingCapitalTTM": -42881000,
-    "tangibleAssetValueTTM": 1224513000,
+    "workingCapitalTTM": -42_881_000,
+    "tangibleAssetValueTTM": 1_224_513_000,
     "netCurrentAssetValueTTM": -23.50607508074712,
     "investedCapitalTTM": 1.1064216849844508,
-    "averageReceivablesTTM": 9478000.0,
-    "averagePayablesTTM": 65549500,
+    "averageReceivablesTTM": 9_478_000.0,
+    "averagePayablesTTM": 65_549_500,
     "averageInventoryTTM": nil,
     "daysSalesOutstandingTTM": 7.349298987442429,
     "daysPayablesOutstandingTTM": 178.58989919005276,

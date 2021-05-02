@@ -78,6 +78,5 @@ class WriteFinancials
       write_json("tmp/#{data_type}-#{stock}.json", result)
       result
     end
-
   end
 end

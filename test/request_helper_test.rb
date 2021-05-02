@@ -30,7 +30,6 @@ class RequestHelperTest < Minitest::Test
     refute test_method.dig('researchanddevelopementtorevenuettm')
     refute test_method.dig('daysofinventoryonhandttm')
     refute test_method.dig('averageinventoryttm')
-    assert_empty test_method.select {|k,v| k =~ /[A-Z]/}
+    assert_empty(test_method.select { |k, _v| k =~ /[A-Z]/ })
   end
-
 end

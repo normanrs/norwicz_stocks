@@ -8,7 +8,7 @@ Dotenv.load('token.env')
 
 module RequestHelper
   include DataHelper
-  
+
   def api_call(uri)
     request = Net::HTTP::Get.new(uri)
     request['Upgrade-Insecure-Requests'] = '1'

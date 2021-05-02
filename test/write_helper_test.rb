@@ -14,5 +14,4 @@ class WriteHelperTest < Minitest::Test
     test_method = write_json('tmp/write_helper.json', sample_fmp_data)
     assert_instance_of Integer, test_method
   end
-
 end
