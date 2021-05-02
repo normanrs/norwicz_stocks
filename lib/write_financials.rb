@@ -20,7 +20,7 @@ class WriteFinancials
     DAY = Date.today.day
 
     def top_picks
-      financial_data = JSON.parse(File.read('data/stock_data.json'), {})
+      financial_data = JSON.parse(File.read(FILENAME), {})
       top_stocks = {
         reits: top_reits(financial_data)
       }
