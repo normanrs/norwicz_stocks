@@ -1,13 +1,19 @@
-[
-	"ABR",
-	"ALX",
-	"BDN",
-	"BFS",
-	"BRG",
-	"EQC",
-	"GEO",
-	"IRM",
-	"LTC",
-	"NHI",
-	"UNIT"
-]
+{
+	"reits": [
+		"ALX",
+		"BDN",
+		"BFS",
+		"GEO",
+		"GNL",
+		"GOOD",
+		"ILPT",
+		"IRM",
+		"MGP",
+		"NHI",
+		"NNN",
+		"OHI",
+		"OLP",
+		"SBRA",
+		"SRC"
+	]
+}
