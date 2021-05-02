@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
+require './test/test_helper.rb'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './test/test_helper.rb'
 require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
@@ -22,6 +22,7 @@ class WriteFinancialsTest < Minitest::Test
 
   def test_top_picks
     test_method = WriteFinancials.top_picks
+    puts test_method
     refute_empty test_method
   end
 end

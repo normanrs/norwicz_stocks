@@ -21,7 +21,7 @@ A simple app to gather financial data on high-dividend stocks, output top picks,
 `./get_financials` will write financials (for reals).
 
 ## Discussion
-Most of the stocks evaluated here are REITs (real estate investment trusts). REIT ETFs (exchange-traded funds) are a special class of stock. They have numerous legal requirements that go above and beyond those for other stocks, restricting the extent to which they must be backed by assets and the percent of revenue they must return to investors in the form of dividends. This and the inherent value of real estate make them a particularly attractive investement in that they can be safer and yet still high-performing as compared to other stock types. Other high-dividend ETFs in asset management and technology industries have also been included because of their predicted reliability.
+The first type of stocks evaluated here are REITs (real estate investment trusts). REIT ETFs (exchange-traded funds) are a special class of stock. They have numerous legal requirements that go above and beyond those for other stocks, restricting the extent to which they must be backed by assets and the percent of revenue they must return to investors in the form of dividends. This and the inherent value of real estate make them a particularly attractive investement in that they can be safer and yet still high-performing as compared to other stock types. Other high-dividend ETFs in asset management and technology industries have also been included because of their predicted reliability.
 Dividend-oriented ETFs operate differently than other stocks, making them more difficult to evaluate in terms of performance. The normal metrics, such as price to earnings ration (P/E) or price to earnings growth (PEG) aren't good signals because the operations behind the funds may not be intended toward growth. An ETF that earns 6% is a good dividend stock even if its stock price ends the year the same as it began. This app attempts to collect data that, when analyzed properly, CAN help determine if an REIT is worth investing in. (Analyzing the data is a work in progress!)
 Things I've learned so far: 
 1. I'm consistently using TTM (trailing twelve months) data in an effort to judge the ETF based on recent history, not just by its latest numbers or over the life of the trust.
@@ -43,6 +43,6 @@ Also referenced:
 - [SEC Edgar](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 - [Gurufocus Financials](https://www.gurufocus.com/download_financials_batch.php)
 - [Seeking Alpha](https://seekingalpha.com/symbol/SPG)
-- [Motley Fool](https://www.fool.com/investing/general/2015/07/20/7-key-metrics-for-evaluating-equity-reits.aspx)
+- [Motley Fool](https://www.fool.com/millionacres/real-estate-investing/reits/reit-investing-101/how-to-value-reits/)
 - [Simply Safe Dividends](https://www.simplysafedividends.com/intelligent-income/posts/21-the-most-important-metrics-for-reit-investing)
 - [Finviz](https://www.finviz.com)

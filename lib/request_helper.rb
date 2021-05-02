@@ -3,19 +3,11 @@
 require 'dotenv'
 require 'net/http'
 require 'uri'
+require_relative 'data_helper.rb'
 Dotenv.load('token.env')
 
 module RequestHelper
-  def request(method, path, options = {}, url = BASE_URL)
-    # Builds a request with parameters and returns the last response
-    build_request(method, url, path)
-    unless options.empty?
-      add_params(options.fetch(:params, {}),
-                 options.fetch(:headers, {}),
-                 options)
-    end
-    respond
-  end
+  include DataHelper
 
   def api_call(uri)
     request = Net::HTTP::Get.new(uri)

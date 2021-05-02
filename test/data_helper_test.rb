@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
+require './test/test_helper.rb'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './test/test_helper.rb'
 require './lib/data_helper.rb'
 
 class DataHelperTest < Minitest::Test
@@ -16,8 +16,8 @@ class DataHelperTest < Minitest::Test
     refute_empty test_method
   end
 
-  def test_reits
-    test_method = reits
+  def test_stocks
+    test_method = stocks
     refute_empty test_method
   end
 

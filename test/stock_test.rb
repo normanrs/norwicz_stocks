@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require './test/test_helper.rb'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/stock.rb'
