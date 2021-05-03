@@ -11,7 +11,23 @@ class WriteHelperTest < Minitest::Test
   def setup; end
 
   def test_write_json
-    test_method = write_json('tmp/write_helper.json', sample_fmp_data)
-    assert_instance_of Integer, test_method
+    test_file = 'tmp/write_helper.json'
+    safe_delete(test_file)
+    write_json(test_file, sample_fmp_data)
+    assert File.exist?(test_file)
+  end
+
+  def test_write_csv
+    test_file = 'tmp/write_helper.csv'
+    safe_delete(test_file)
+    headers = sample_fmp_data.values.first.keys.unshift('TICKER')
+    write_csv(test_file, headers, sample_fmp_data)
+    assert File.exist?(test_file)
+  end
+
+  def test_push_dir_to_s3
+    test_dir = 'test/data/hello'
+    s3_report = push_dir_to_s3(test_dir)
+    refute_empty s3_report
   end
 end
