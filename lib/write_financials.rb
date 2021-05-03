@@ -48,7 +48,8 @@ class WriteFinancials
       existing_data.transform_keys! { |key| key.to_s.downcase }
       write_data = merge_hashes(existing_data, new_financials)
       write_json("#{FILESOURCE}stock_data.json", write_data)
-      write_csv("#{FILESOURCE}stock_data.csv", write_data)
+      headers = write_data.values.first.keys.unshift('TICKER')
+      write_csv("#{FILESOURCE}stock_data.csv", headers, write_data)
     end
 
     def merge_hashes(hash1, hash2)

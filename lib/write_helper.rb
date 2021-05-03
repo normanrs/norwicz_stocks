@@ -3,8 +3,13 @@
 require 'aws-sdk-s3'
 require 'csv'
 require 'json'
+require_relative 'data_helper'
 
 module WriteHelper
+  extend DataHelper
+
+  BUCKET = config.dig('bucket')
+
   def write_json(filename, hash_in)
     puts "Writing #{filename}"
     File.open(filename, 'w') do |f|
@@ -12,8 +17,7 @@ module WriteHelper
     end
   end
 
-  def write_csv(filename, hash_in)
-    headers = hash_in.values.first.keys.unshift('TICKER')
+  def write_csv(filename, headers, hash_in)
     CSV.open(filename, 'wb', write_headers: true, headers: headers) do |csv|
       hash_in.each do |key, data|
         csv << data.values.unshift(key)
@@ -21,7 +25,7 @@ module WriteHelper
     end
   end
 
-  def push_to_s3(dir)
+  def push_dir_to_s3(dir)
     Dir.glob("#{dir}/*.*").each do |path_filename|
       puts "Writing #{path_filename} to S3 bucket"
       s3 = Aws::S3::Resource.new(region: 'us-east-1')
