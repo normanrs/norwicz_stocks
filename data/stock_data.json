@@ -1,0 +1,734 @@
+{
+	"AAT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"AB": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ABR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ACC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ACRE": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ADC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"AFIN": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"AHH": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"AIV": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ALX": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ANH": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"APTS": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ARCC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ARE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ARI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ARR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"AVB": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"BANX": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"BDN": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"BFS": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"BNL": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"BPYU": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"BRG": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"BRMK": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"BRT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"BXMT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"BXP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CCI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CEQP": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CGBD": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CHCT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CHMI": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CIK": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CIO": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CLNY": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CLPR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CMCT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"COLD": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CONE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"COR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CORR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CPLG": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CPT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CSR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CTRE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CTT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"CUBE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CUZ": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"CXP": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"DEA": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"DEI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"DHY": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"DLR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"DOC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"DRE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"DX": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"EAD": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"EARN": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ECF": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ELS": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"EPD": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"EQC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"EQR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"ESS": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"EXR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"FCPT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"FDUS": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"FR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"FRT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"FSP": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"FTF": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"GBDC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"GEO": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"GILT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"GLPI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"GMRE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"GNL": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"GOOD": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"GTY": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"HIW": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"HMG": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"HPP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"HR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"HRZN": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"HTA": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"IFN": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"IIPR": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"ILPT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"IRCP": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"IRM": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"IRT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"JBGS": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"KIM": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"KRC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"KREF": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"KRG": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"LAMR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"LAND": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"LFT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"LOAN": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"LSI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"LTC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"LXP": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"MAA": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"MAC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"MGP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"MITT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"MMP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"MNDO": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"MNR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"MPLX": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"MPW": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"NEWT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"NHI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"NLY": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"NMFC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"NNN": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"NSA": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"NTST": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"NXRT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"NYC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"O": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"OCCI": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"OFC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"OFS": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"OHI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"OLP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"OPI": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"OXSQ": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PAGP": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"PCH": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PDM": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"PEAK": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"PFLT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PGRE": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PINE": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PLD": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"PLYM": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PMT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PNNT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PSA": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PSB": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"PSEC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"QTS": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"RC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"REG": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"RYN": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SACH": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SBRA": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SCM": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"SELF": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"SKT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SLG": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"SLRC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"SPG": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SQFT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"SRC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"STAG": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"STAY": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"STOR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"STWD": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"SUNS": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"TCPC": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"TPVG": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"TRMT": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"TSLX": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"UBA": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"UBP": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"UDR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"UE": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"UHT": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"UMH": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"UNIT": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"VER": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"VICI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"VNO": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"VTR": {
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
+	},
+	"WELL": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"WHF": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"WPC": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"WRE": {
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
+	},
+	"WRI": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	},
+	"WSR": {
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
+	}
+}

@@ -24,10 +24,4 @@ class WriteHelperTest < Minitest::Test
     write_csv(test_file, headers, sample_fmp_data)
     assert File.exist?(test_file)
   end
-
-  def test_push_dir_to_s3
-    test_dir = 'test/data/hello'
-    s3_report = push_dir_to_s3(test_dir)
-    refute_empty s3_report
-  end
 end

@@ -33,4 +33,13 @@ module WriteHelper
       obj.upload_file(path_filename.to_s)
     end
   end
+
+  def pull_dir_from_s3(dir)
+    s3 = Aws::S3::Resource.new(region: 'us-east-1')
+    bucket = s3.bucket(BUCKET)
+    bucket.objects.to_a.each do |s3_object|
+      s3_object.get(response_target: s3_object.key.to_s)
+      puts "#{s3_object.key} has been downloaded to #{dir}"
+    end
+  end
 end

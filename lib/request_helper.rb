@@ -35,6 +35,7 @@ module RequestHelper
 
   def fmp_clean(raw_data)
     return {} unless raw_data
+
     raw_data.transform_keys! { |key| key.to_s.downcase }
     result = raw_data.sort_by { |key, _value| key }.to_h
     result.delete('averageinventoryttm')
