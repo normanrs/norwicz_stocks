@@ -28,19 +28,18 @@ class WriteFinancials
       top_stocks
     end
 
+    def manual_statements_update
+      file_update_age = Time.now - File.mtime("#{FILESOURCE}stock_data.json")
+      return 'Files up to' if file_update_age < 86_400
+      puts 'Getting new financial data'
+      update_stock_data({})
+      File.mtime("#{FILESOURCE}stock_data.json")
+    end
+
     def write_statements
-      if !File.exist?("#{FILESOURCE}stock_data.json")
-        # Force update to populate all data
-        puts 'Getting new financial data'
-        update_stock_data({})
-      elsif (Time.now - File.mtime("#{FILESOURCE}stock_data.json")) < 86_400
-        # Do not update financials less than 1 day old or 86_400 seconds
-        puts 'Financial data is up-to-date'
-      else
-        puts 'Updating existing financial data'
-        existing_financials = JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
-        update_stock_data(existing_financials)
-      end
+      puts 'Updating existing financial data'
+      existing_financials = JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
+      update_stock_data(existing_financials)
       File.mtime("#{FILESOURCE}stock_data.json")
     end
 
