@@ -1,4 +1,187 @@
 TICKER,ratingrecommendation,ratingscore
+aat,Strong Buy,5
+ab,Buy,4
+abr,Strong Buy,5
+acc,Strong Buy,5
+acre,Buy,4
+adc,Strong Buy,5
+afin,Buy,4
+ahh,Buy,4
+aiv,Buy,4
+alx,Strong Buy,5
+anh,Buy,4
+apts,Buy,4
+arcc,Buy,4
+are,Strong Buy,5
+ari,Strong Buy,5
+arr,Buy,4
+avb,Strong Buy,5
+banx,Buy,4
+bdn,Strong Buy,5
+bfs,Strong Buy,5
+bnl,Strong Buy,5
+bpyu,Buy,4
+brg,Buy,4
+brmk,Buy,4
+brt,Buy,4
+bxmt,Strong Buy,5
+bxp,Strong Buy,5
+cci,Strong Buy,5
+ceqp,Buy,4
+cgbd,Buy,4
+chct,Strong Buy,5
+chmi,Buy,4
+cik,Buy,4
+cio,Strong Buy,5
+clny,Buy,4
+clpr,Buy,4
+cmct,Buy,4
+cold,Buy,4
+cone,Strong Buy,5
+cor,Strong Buy,5
+corr,Buy,4
+cplg,Buy,4
+cpt,Strong Buy,5
+csr,Buy,4
+ctre,Strong Buy,5
+ctt,Buy,4
+cube,Strong Buy,5
+cuz,Strong Buy,5
+cxp,Buy,4
+dea,Strong Buy,5
+dei,Strong Buy,5
+dhy,Neutral,3
+dlr,Strong Buy,5
+doc,Strong Buy,5
+dre,Strong Buy,5
+dx,Strong Buy,5
+ead,Neutral,3
+earn,Buy,4
+ecf,Buy,4
+els,Strong Buy,5
+epd,Strong Buy,5
+eqc,Buy,4
+eqr,Strong Buy,5
+ess,Strong Buy,5
+exr,Strong Buy,5
+fcpt,Strong Buy,5
+fdus,Buy,4
+fr,Strong Buy,5
+frt,Strong Buy,5
+fsp,Buy,4
+ftf,Neutral,3
+gbdc,Buy,4
+geo,Strong Buy,5
+gilt,Strong Buy,5
+glpi,Strong Buy,5
+gmre,Strong Buy,5
+gnl,Buy,4
+good,Strong Buy,5
+gty,Strong Buy,5
+hiw,Strong Buy,5
+hmg,Neutral,3
+hpp,Strong Buy,5
+hr,Buy,4
+hrzn,Strong Buy,5
+hta,Strong Buy,5
+ifn,Neutral,3
+iipr,Buy,4
+ilpt,Strong Buy,5
+ircp,Neutral,3
+irm,Strong Buy,5
+irt,Strong Buy,5
+jbgs,Buy,4
+kim,Strong Buy,5
+krc,Strong Buy,5
+kref,Strong Buy,5
+krg,Buy,4
+lamr,Strong Buy,5
+land,Buy,4
+lft,Strong Buy,5
+loan,Strong Buy,5
+lsi,Strong Buy,5
+ltc,Strong Buy,5
+lxp,Buy,4
+maa,Strong Buy,5
+mac,Buy,4
+mgp,Strong Buy,5
+mitt,Buy,4
+mmp,Strong Buy,5
+mndo,Buy,4
+mnr,Strong Buy,5
+mplx,Strong Buy,5
+mpw,Strong Buy,5
+newt,Buy,4
+nhi,Strong Buy,5
+nly,Strong Buy,5
+nmfc,Buy,4
+nnn,Strong Buy,5
+nsa,Strong Buy,5
+ntst,Buy,4
+nxrt,Buy,4
+nyc,Buy,4
+o,Strong Buy,5
+occi,Neutral,3
+ofc,Strong Buy,5
+ofs,Buy,4
+ohi,Strong Buy,5
+olp,Strong Buy,5
+opi,Buy,4
+oxsq,Buy,4
+pagp,Neutral,3
+pch,Buy,4
+pdm,Strong Buy,5
+peak,Strong Buy,5
+pflt,Buy,4
+pgre,Buy,4
+pine,Buy,4
+pld,Strong Buy,5
+plym,Buy,4
+pmt,Buy,4
+pnnt,Buy,4
+psa,Buy,4
+psb,Buy,4
+psec,Buy,4
+qts,Strong Buy,5
+rc,Buy,4
+reg,Strong Buy,5
+ryn,Strong Buy,5
+sach,Strong Buy,5
+sbra,Strong Buy,5
+scm,Buy,4
+self,Buy,4
+skt,Strong Buy,5
+slg,Buy,4
+slrc,Buy,4
+spg,Strong Buy,5
+sqft,Buy,4
+src,Buy,4
+stag,Strong Buy,5
+stay,Strong Buy,5
+stor,Strong Buy,5
+stwd,Strong Buy,5
+suns,Strong Buy,5
+tcpc,Buy,4
+tpvg,Strong Buy,5
+trmt,Buy,4
+tslx,Buy,4
+uba,Buy,4
+ubp,Strong Buy,5
+udr,Strong Buy,5
+ue,Strong Buy,5
+uht,Strong Buy,5
+umh,Strong Buy,5
+unit,Neutral,3
+ver,Strong Buy,5
+vici,Strong Buy,5
+vno,Strong Buy,5
+vtr,Neutral,3
+well,Strong Buy,5
+whf,Buy,4
+wpc,Strong Buy,5
+wre,Buy,4
+wri,Strong Buy,5
+wsr,Strong Buy,5
 AAT,Strong Buy,5
 AB,Buy,4
 ABR,Strong Buy,5
@@ -6,7 +189,7 @@ ACC,Strong Buy,5
 ACRE,Buy,4
 ADC,Strong Buy,5
 AFIN,Buy,4
-AHH,Buy,4
+AHH,Strong Buy,5
 AIV,Buy,4
 ALX,Strong Buy,5
 ANH,Buy,4
@@ -21,7 +204,7 @@ BDN,Strong Buy,5
 BFS,Strong Buy,5
 BNL,Strong Buy,5
 BPYU,Buy,4
-BRG,Buy,4
+BRG,Strong Buy,5
 BRMK,Buy,4
 BRT,Buy,4
 BXMT,Strong Buy,5
@@ -39,7 +222,7 @@ CMCT,Buy,4
 COLD,Buy,4
 CONE,Strong Buy,5
 COR,Strong Buy,5
-CORR,Buy,4
+CORR,Neutral,3
 CPLG,Buy,4
 CPT,Strong Buy,5
 CSR,Buy,4
@@ -56,7 +239,7 @@ DOC,Strong Buy,5
 DRE,Strong Buy,5
 DX,Strong Buy,5
 EAD,Neutral,3
-EARN,Buy,4
+EARN,Strong Buy,5
 ECF,Buy,4
 ELS,Strong Buy,5
 EPD,Strong Buy,5
@@ -81,7 +264,7 @@ GTY,Strong Buy,5
 HIW,Strong Buy,5
 HMG,Neutral,3
 HPP,Strong Buy,5
-HR,Buy,4
+HR,Strong Buy,5
 HRZN,Strong Buy,5
 HTA,Strong Buy,5
 IFN,Neutral,3
@@ -92,16 +275,16 @@ IRM,Strong Buy,5
 IRT,Strong Buy,5
 JBGS,Buy,4
 KIM,Strong Buy,5
-KRC,Strong Buy,5
+KRC,Buy,4
 KREF,Strong Buy,5
-KRG,Buy,4
+KRG,Strong Buy,5
 LAMR,Strong Buy,5
 LAND,Buy,4
-LFT,Strong Buy,5
+LFT,Buy,4
 LOAN,Strong Buy,5
 LSI,Strong Buy,5
 LTC,Strong Buy,5
-LXP,Buy,4
+LXP,Strong Buy,5
 MAA,Strong Buy,5
 MAC,Buy,4
 MGP,Strong Buy,5
@@ -122,13 +305,13 @@ NXRT,Buy,4
 NYC,Buy,4
 O,Strong Buy,5
 OCCI,Neutral,3
-OFC,Strong Buy,5
+OFC,Buy,4
 OFS,Buy,4
 OHI,Strong Buy,5
 OLP,Strong Buy,5
 OPI,Buy,4
 OXSQ,Buy,4
-PAGP,Neutral,3
+PAGP,Buy,4
 PCH,Buy,4
 PDM,Strong Buy,5
 PEAK,Strong Buy,5
