@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 
 require 'aws-sdk-s3'
+require 'dotenv'
 require 'csv'
 require 'json'
 require_relative 'data_helper'
 
 module WriteHelper
   extend DataHelper
-
+  Dotenv.load('token.env') unless aws_creds
   BUCKET = config.dig('bucket')
 
   def write_json(filename, hash_in)

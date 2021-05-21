@@ -25,6 +25,10 @@ module DataHelper
     @env_config ||= ENV['CONFIG'] || 'dev'
   end
 
+  def aws_creds
+    !ENV['AWS_ACCESS_KEY_ID'].nil?
+  end
+
   def top_reit?(hash_in)
     hash_in.dig('netIncomePerShareTTM').to_f.positive? &&
       hash_in.dig('freeCashFlowPerShareTTM').to_f.positive? &&
