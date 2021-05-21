@@ -30,7 +30,8 @@ class WriteFinancials
 
     def manual_statements_update
       file_update_age = Time.now - File.mtime("#{FILESOURCE}stock_data.json")
-      return 'Files up to' if file_update_age < 86_400
+      return 'Files up to date' if file_update_age < 86_400
+
       puts 'Getting new financial data'
       update_stock_data({})
       File.mtime("#{FILESOURCE}stock_data.json")
