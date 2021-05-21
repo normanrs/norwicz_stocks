@@ -44,7 +44,6 @@ class WriteFinancials
     end
 
     def update_stock_data(existing_data)
-      existing_data.transform_keys! { |key| key.to_s.downcase }
       write_data = merge_hashes(existing_data, new_financials)
       write_json("#{FILESOURCE}stock_data.json", write_data)
       headers = write_data.values.first.keys.unshift('TICKER')
