@@ -30,7 +30,8 @@ class WriteFinancials
 
     def manual_statements_update
       file_update_age = Time.now - File.mtime("#{FILESOURCE}stock_data.json")
-      return 'Files up to' if file_update_age < 86_400
+      return 'Files up to date' if file_update_age < 86_400
+
       puts 'Getting new financial data'
       update_stock_data({})
       File.mtime("#{FILESOURCE}stock_data.json")
@@ -44,6 +45,7 @@ class WriteFinancials
     end
 
     def update_stock_data(existing_data)
+      existing_data.transform_keys! { |key| key.to_sym.upcase }
       write_data = merge_hashes(existing_data, new_financials)
       write_json("#{FILESOURCE}stock_data.json", write_data)
       headers = write_data.values.first.keys.unshift('TICKER')
