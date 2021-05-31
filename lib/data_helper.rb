@@ -22,7 +22,7 @@ module DataHelper
   end
 
   def env_config
-    @env_config ||= ENV['CONFIG'] || 'dev'
+    ENV['CONFIG'] || 'dev'
   end
 
   def aws_creds
