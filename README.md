@@ -2,7 +2,7 @@
 A simple app to gather financial data on high-dividend stocks, output top picks, and export the data to an S3 bucket.
 
 ## Requirements
-- Ruby 2.6.6
+- Ruby 2.7.3
 - Bundler 2.2.7
 
 ## Setup:
