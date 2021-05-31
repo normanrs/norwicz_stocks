@@ -6,6 +6,7 @@ require 'minitest/pride'
 require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
+  include WriteHelper
   def setup; end
 
   def test_write_statements
@@ -14,15 +15,15 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_merge_hashes
-    hash1 = { 'AAT' => { 'wth' => 11 } }
-    hash2 = { 'AAT' => { 'wtf' => 42 } }
-    test_method = WriteFinancials.merge_hashes(hash1, hash2)
-    assert test_method['AAT'].count == 2
+    hash1 = JSON.parse(File.read('./test/data/stock_data.json'), {})
+    hash2 = JSON.parse(File.read('./test/data/stock_data2.json'), {})
+    merged = WriteFinancials.merge_hashes(hash1, hash2)
+    merged.each { |k, _v| merged[k].merge!(hash2.dig(k)) }
+    assert_equal hash1.count, merged.count
   end
 
   def test_top_picks
     test_method = WriteFinancials.top_picks
-    puts test_method
     refute_empty test_method
   end
 end

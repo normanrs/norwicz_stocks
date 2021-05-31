@@ -25,8 +25,4 @@ class WriteHelperTest < Minitest::Test
     assert File.exist?(test_file)
   end
 
-  def test_pull_dir_from_s3
-    test_method = pull_dir_from_s3('data')
-    assert_instance_of Array, test_method
-  end
 end

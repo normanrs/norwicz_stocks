@@ -24,7 +24,7 @@ class WriteFinancials
       top_stocks = {
         reits: top_reits(stock_data)
       }
-      write_json('data/top_stocks.json', top_stocks)
+      write_json("#{FILESOURCE}top_stocks.json", top_stocks)
       top_stocks
     end
 
@@ -45,8 +45,8 @@ class WriteFinancials
     end
 
     def update_stock_data(existing_data)
-      existing_data.transform_keys! { |key| key.to_sym.upcase }
       write_data = merge_hashes(existing_data, new_financials)
+      write_data.each { |k, _v| write_data[k].merge!(new_financials.dig(k) || {}) }
       write_json("#{FILESOURCE}stock_data.json", write_data)
       headers = write_data.values.first.keys.unshift('TICKER')
       write_csv("#{FILESOURCE}stock_data.csv", headers, write_data)
@@ -57,9 +57,11 @@ class WriteFinancials
     end
 
     def new_financials
-      # FMP site limits calls with free membership, so this will
-      # write half the data one day and the rest another day
-      DAY.odd? ? financials(FMP_ODD_DAY) : financials(FMP_EVEN_DAY)
+      @new_financials ||= begin
+        # FMP site limits calls with free membership, so this will
+        # write half the data one day and the rest another day
+        DAY.odd? ? financials(FMP_ODD_DAY) : financials(FMP_EVEN_DAY)
+      end
     end
 
     def financials(call)

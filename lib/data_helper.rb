@@ -13,7 +13,7 @@ module DataHelper
   end
 
   def stocks
-    @stocks ||= CSV.read('stocks.csv', 'r:bom|utf-8').flatten
+    @stocks ||= CSV.read('stocks.csv').flatten
   end
 
   def config
@@ -22,7 +22,7 @@ module DataHelper
   end
 
   def env_config
-    @env_config ||= ENV['CONFIG'] || 'dev'
+    ENV['CONFIG'] || 'dev'
   end
 
   def aws_creds
@@ -30,9 +30,9 @@ module DataHelper
   end
 
   def top_reit?(hash_in)
-    hash_in.dig('dividendyieldpercentagettm').to_f > 4.8 &&
+    hash_in.dig('dividendyieldpercentagettm').to_f > 4.5 &&
       hash_in.dig('freecashflowpersharettm').to_f.positive? &&
-      hash_in.dig('interestcoveragettm').to_f > 1.3 &&
+      hash_in.dig('interestcoveragettm').to_f > 1.2 &&
       hash_in.dig('netcurrentassetvaluettm').to_f > -50.0 &&
       hash_in.dig('netdebttoebitdattm').to_f.between?(-1.0, 15.0) &&
       hash_in.dig('netincomepersharettm').to_f.positive? &&
