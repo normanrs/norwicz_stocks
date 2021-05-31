@@ -24,7 +24,7 @@ class WriteFinancials
       top_stocks = {
         reits: top_reits(stock_data)
       }
-      write_json('data/top_stocks.json', top_stocks)
+      write_json("#{FILESOURCE}top_stocks.json", top_stocks)
       top_stocks
     end
 
