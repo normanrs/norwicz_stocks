@@ -13,7 +13,7 @@ module DataHelper
   end
 
   def stocks
-    @stocks ||= CSV.read('stocks.csv', 'r:bom|utf-8').flatten
+    @stocks ||= CSV.read('stocks.csv').flatten
   end
 
   def config
