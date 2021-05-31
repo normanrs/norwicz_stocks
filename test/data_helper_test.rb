@@ -35,4 +35,10 @@ class DataHelperTest < Minitest::Test
     test_method = config
     assert_instance_of Hash, test_method
   end
+
+  def test_top_reit
+    hash1 = JSON.parse(File.read("./test/data/top_reit.json"), {})
+    test_method = top_reit?(hash1)
+    assert test_method
+  end
 end

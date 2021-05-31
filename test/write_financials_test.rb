@@ -14,8 +14,8 @@ class WriteFinancialsTest < Minitest::Test
   end
 
   def test_merge_hashes
-    hash1 = { 'AAT' => { 'wth' => 11 } }
-    hash2 = { 'AAT' => { 'wtf' => 42 } }
+    hash1 = JSON.parse(File.read("./test/data/stock_data.json"), {})
+    hash2 = JSON.parse(File.read("./test/data/stock_data2.json"), {})
     test_method = WriteFinancials.merge_hashes(hash1, hash2)
     assert test_method['AAT'].count == 2
   end
