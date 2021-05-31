@@ -54,7 +54,9 @@
 		"stockbasedcompensationtorevenuettm": 0.019712732357692216,
 		"tangibleassetvaluettm": 1207716000,
 		"tangiblebookvaluepersharettm": 20.133856614397743,
-		"workingcapitalttm": 286586000
+		"workingcapitalttm": 286586000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"AB": {
 		"averagepayablesttm": null,
@@ -111,7 +113,9 @@
 		"stockbasedcompensationtorevenuettm": 0.3279382523358491,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 16.229195374752862,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ABR": {
 		"averagepayablesttm": null,
@@ -168,7 +172,9 @@
 		"stockbasedcompensationtorevenuettm": 0.016962490665747603,
 		"tangibleassetvaluettm": 1263712000,
 		"tangiblebookvaluepersharettm": 9.258036894598616,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ACC": {
 		"averagepayablesttm": null,
@@ -225,7 +231,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01942143243604067,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 22.57421132579148,
-		"workingcapitalttm": -441861000
+		"workingcapitalttm": -441861000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ACRE": {
 		"averagepayablesttm": null,
@@ -282,7 +290,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020754788834304427,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 16.73511144479595,
-		"workingcapitalttm": 57516000
+		"workingcapitalttm": 57516000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ADC": {
 		"averagepayablesttm": 68788000,
@@ -339,7 +349,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0191692936519962,
 		"tangibleassetvaluettm": 2254500000,
 		"tangiblebookvaluepersharettm": 35.88317012791105,
-		"workingcapitalttm": -17892000
+		"workingcapitalttm": -17892000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"AFIN": {
 		"averagepayablesttm": 27753000,
@@ -396,7 +408,9 @@
 		"stockbasedcompensationtorevenuettm": 0.04573870329549746,
 		"tangibleassetvaluettm": 1235879000,
 		"tangiblebookvaluepersharettm": 11.39725268516652,
-		"workingcapitalttm": -136489000
+		"workingcapitalttm": -136489000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"AHH": {
 		"averagepayablesttm": 61139500,
@@ -453,7 +467,9 @@
 		"stockbasedcompensationtorevenuettm": 0.006300265596820297,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 12.802531049106392,
-		"workingcapitalttm": 178205000
+		"workingcapitalttm": 178205000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"AIV": {
 		"averagepayablesttm": null,
@@ -510,7 +526,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 551827000,
 		"tangiblebookvaluepersharettm": 3.715206150863114,
-		"workingcapitalttm": 290278000
+		"workingcapitalttm": 290278000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ALX": {
 		"averagepayablesttm": 39169000,
@@ -567,7 +585,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0029823296965479536,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 39.68173087923446,
-		"workingcapitalttm": 592181000
+		"workingcapitalttm": 592181000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ANH": {
 		"averagepayablesttm": 4678500.0,
@@ -624,7 +644,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 4.3191476493831145,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"APTS": {
 		"averagepayablesttm": 39574500,
@@ -681,7 +703,9 @@
 		"stockbasedcompensationtorevenuettm": 0.009546112840107233,
 		"tangibleassetvaluettm": 1268465000,
 		"tangiblebookvaluepersharettm": 25.35256730557832,
-		"workingcapitalttm": 331700000
+		"workingcapitalttm": 331700000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ARCC": {
 		"averagepayablesttm": 138000000,
@@ -738,7 +762,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 17.79020979020979,
-		"workingcapitalttm": -7765000000
+		"workingcapitalttm": -7765000000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ARE": {
 		"averagepayablesttm": 302671500,
@@ -795,7 +821,9 @@
 		"stockbasedcompensationtorevenuettm": 0.023898934703388663,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 107.56346900283282,
-		"workingcapitalttm": -242722000
+		"workingcapitalttm": -242722000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ARI": {
 		"averagepayablesttm": 18956000,
@@ -852,7 +880,9 @@
 		"stockbasedcompensationtorevenuettm": 0.07985240483245953,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.486618780784122,
-		"workingcapitalttm": -3219061000
+		"workingcapitalttm": -3219061000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ARR": {
 		"averagepayablesttm": 4792000.0,
@@ -909,7 +939,9 @@
 		"stockbasedcompensationtorevenuettm": 0.014570015597322858,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.571918015887453,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"AVB": {
 		"averagepayablesttm": 89281500,
@@ -966,7 +998,9 @@
 		"stockbasedcompensationtorevenuettm": 0.00961770008699338,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 76.5942500008992,
-		"workingcapitalttm": -217982000
+		"workingcapitalttm": -217982000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BANX": {
 		"averagepayablesttm": 2278018.5,
@@ -1023,7 +1057,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 21.285770679218178,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"BDN": {
 		"averagepayablesttm": 120595000,
@@ -1080,7 +1116,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013483947168939128,
 		"tangibleassetvaluettm": 1710609000,
 		"tangiblebookvaluepersharettm": 10.025562471036952,
-		"workingcapitalttm": 74935000
+		"workingcapitalttm": 74935000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BFS": {
 		"averagepayablesttm": 25924000,
@@ -1137,7 +1175,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0058769626588189685,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 21.57590031259367,
-		"workingcapitalttm": -789345000
+		"workingcapitalttm": -789345000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BNL": {
 		"averagepayablesttm": 73004000,
@@ -1194,7 +1234,9 @@
 		"stockbasedcompensationtorevenuettm": 0.00908299192895518,
 		"tangibleassetvaluettm": 2204105000,
 		"tangiblebookvaluepersharettm": 12.827588104969106,
-		"workingcapitalttm": 39795000
+		"workingcapitalttm": 39795000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BPYU": {
 		"averagepayablesttm": 73731000,
@@ -1251,7 +1293,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 3713062000,
 		"tangiblebookvaluepersharettm": 96.03877077081789,
-		"workingcapitalttm": 222683000
+		"workingcapitalttm": 222683000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"BRG": {
 		"averagepayablesttm": 1408500.0,
@@ -1308,7 +1352,9 @@
 		"stockbasedcompensationtorevenuettm": 0.045895811494462424,
 		"tangibleassetvaluettm": 141678000,
 		"tangiblebookvaluepersharettm": 6.136072002676211,
-		"workingcapitalttm": 387892000
+		"workingcapitalttm": 387892000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BRMK": {
 		"averagepayablesttm": 4720000.0,
@@ -1365,7 +1411,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013166398495268744,
 		"tangibleassetvaluettm": 1173800000,
 		"tangiblebookvaluepersharettm": 7.82297182192463,
-		"workingcapitalttm": 1023320000
+		"workingcapitalttm": 1023320000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"BRT": {
 		"averagepayablesttm": null,
@@ -1422,7 +1470,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.843917931186516,
-		"workingcapitalttm": 7239000.0
+		"workingcapitalttm": 7239000.0,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"BXMT": {
 		"averagepayablesttm": 24559500,
@@ -1479,7 +1529,9 @@
 		"stockbasedcompensationtorevenuettm": 0.07701297051001607,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 26.497720843061376,
-		"workingcapitalttm": 5737652000
+		"workingcapitalttm": 5737652000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"BXP": {
 		"averagepayablesttm": 298569500,
@@ -1536,7 +1588,9 @@
 		"stockbasedcompensationtorevenuettm": 0.017128711963547347,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 52.08395541531989,
-		"workingcapitalttm": 1862600000
+		"workingcapitalttm": 1862600000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CCI": {
 		"averagepayablesttm": 208500000,
@@ -1593,7 +1647,9 @@
 		"stockbasedcompensationtorevenuettm": 0.022696476964769646,
 		"tangibleassetvaluettm": 4599000000,
 		"tangiblebookvaluepersharettm": -12.68287037037037,
-		"workingcapitalttm": -757000000
+		"workingcapitalttm": -757000000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CEQP": {
 		"averagepayablesttm": 199200000,
@@ -1650,7 +1706,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0026184148819759262,
 		"tangibleassetvaluettm": 922000000,
 		"tangiblebookvaluepersharettm": 10.572199730094466,
-		"workingcapitalttm": -107400000
+		"workingcapitalttm": -107400000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CGBD": {
 		"averagepayablesttm": 29332500,
@@ -1707,7 +1765,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 16.543175467727345,
-		"workingcapitalttm": -411105000
+		"workingcapitalttm": -411105000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CHCT": {
 		"averagepayablesttm": null,
@@ -1764,7 +1824,9 @@
 		"stockbasedcompensationtorevenuettm": 0.06662623352665428,
 		"tangibleassetvaluettm": 449505000,
 		"tangiblebookvaluepersharettm": 19.70716055111393,
-		"workingcapitalttm": 36776000
+		"workingcapitalttm": 36776000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CHMI": {
 		"averagepayablesttm": 873000.0,
@@ -1821,7 +1883,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 18.023249511374694,
-		"workingcapitalttm": -54987000
+		"workingcapitalttm": -54987000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CIK": {
 		"averagepayablesttm": 3971552.0,
@@ -1878,7 +1942,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 3.0769576787503587,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CIO": {
 		"averagepayablesttm": 23130500,
@@ -1935,7 +2001,9 @@
 		"stockbasedcompensationtorevenuettm": 0.015028021518529151,
 		"tangibleassetvaluettm": 419972000,
 		"tangiblebookvaluepersharettm": 9.677443141230961,
-		"workingcapitalttm": -10463000
+		"workingcapitalttm": -10463000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CLM": {
 		"averagepayablesttm": null,
@@ -2049,7 +2117,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0342581931555064,
 		"tangibleassetvaluettm": 4957809000,
 		"tangiblebookvaluepersharettm": 8.83649154872931,
-		"workingcapitalttm": 3264364000
+		"workingcapitalttm": 3264364000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CLPR": {
 		"averagepayablesttm": null,
@@ -2106,7 +2176,9 @@
 		"stockbasedcompensationtorevenuettm": 0.017395914039880927,
 		"tangibleassetvaluettm": 86055000,
 		"tangiblebookvaluepersharettm": 5.357342962086784,
-		"workingcapitalttm": 111022000
+		"workingcapitalttm": 111022000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CMCT": {
 		"averagepayablesttm": 15823000,
@@ -2163,7 +2235,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0032033110329969384,
 		"tangibleassetvaluettm": 317805000,
 		"tangiblebookvaluepersharettm": 21.461709886547812,
-		"workingcapitalttm": 148160000
+		"workingcapitalttm": 148160000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"COLD": {
 		"averagepayablesttm": null,
@@ -2220,7 +2294,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0087170491939734,
 		"tangibleassetvaluettm": 2920163000,
 		"tangiblebookvaluepersharettm": 8.380713850825103,
-		"workingcapitalttm": 25999000
+		"workingcapitalttm": 25999000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CONE": {
 		"averagepayablesttm": 148300000,
@@ -2277,7 +2353,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01780358006773101,
 		"tangibleassetvaluettm": 2400400000,
 		"tangiblebookvaluepersharettm": 15.357631538532548,
-		"workingcapitalttm": 104500000
+		"workingcapitalttm": 104500000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"COR": {
 		"averagepayablesttm": 79162500,
@@ -2334,7 +2412,9 @@
 		"stockbasedcompensationtorevenuettm": 0.027149394591511316,
 		"tangibleassetvaluettm": 34277000,
 		"tangiblebookvaluepersharettm": -0.15029165642737408,
-		"workingcapitalttm": -320710000
+		"workingcapitalttm": -320710000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CORR": {
 		"averagepayablesttm": 11297998,
@@ -2391,7 +2471,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 18.262982124848946,
-		"workingcapitalttm": -220825475
+		"workingcapitalttm": -220825475,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CPLG": {
 		"averagepayablesttm": null,
@@ -2448,7 +2530,9 @@
 		"stockbasedcompensationtorevenuettm": 0.027624309392265192,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.56140350877193,
-		"workingcapitalttm": -648000000
+		"workingcapitalttm": -648000000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CPT": {
 		"averagepayablesttm": 167359500,
@@ -2505,7 +2589,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013568290028177204,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 34.898851798647875,
-		"workingcapitalttm": 80461000
+		"workingcapitalttm": 80461000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CRF": {
 		"averagepayablesttm": null,
@@ -2619,7 +2705,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01359883708027253,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 52.60834990059642,
-		"workingcapitalttm": -11319000
+		"workingcapitalttm": -11319000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CTRE": {
 		"averagepayablesttm": 18902000,
@@ -2676,7 +2764,9 @@
 		"stockbasedcompensationtorevenuettm": 0.021572209984688853,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.60092003276829,
-		"workingcapitalttm": -55405000
+		"workingcapitalttm": -55405000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CTT": {
 		"averagepayablesttm": null,
@@ -2733,7 +2823,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03678205005273756,
 		"tangibleassetvaluettm": 129907000,
 		"tangiblebookvaluepersharettm": 2.6639393007279812,
-		"workingcapitalttm": 21327000
+		"workingcapitalttm": 21327000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"CUBE": {
 		"averagepayablesttm": 162582500,
@@ -2790,7 +2882,9 @@
 		"stockbasedcompensationtorevenuettm": 0.010385872599394549,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.470772243422374,
-		"workingcapitalttm": -256383000
+		"workingcapitalttm": -256383000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CUZ": {
 		"averagepayablesttm": null,
@@ -2847,7 +2941,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0077188339003684825,
 		"tangibleassetvaluettm": 4305776000,
 		"tangiblebookvaluepersharettm": 28.95967003983206,
-		"workingcapitalttm": 176916000
+		"workingcapitalttm": 176916000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"CXP": {
 		"averagepayablesttm": 86913000,
@@ -2904,7 +3000,9 @@
 		"stockbasedcompensationtorevenuettm": 0.080277104260478,
 		"tangibleassetvaluettm": 2602444000,
 		"tangiblebookvaluepersharettm": 22.805450641896332,
-		"workingcapitalttm": 47227000
+		"workingcapitalttm": 47227000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"DEA": {
 		"averagepayablesttm": null,
@@ -2961,7 +3059,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01757715565331671,
 		"tangibleassetvaluettm": 1164443000,
 		"tangiblebookvaluepersharettm": 14.179712549457745,
-		"workingcapitalttm": 43255000
+		"workingcapitalttm": 43255000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"DEI": {
 		"averagepayablesttm": 96842500,
@@ -3018,7 +3118,9 @@
 		"stockbasedcompensationtorevenuettm": 0.024657080007659364,
 		"tangibleassetvaluettm": 4013657000,
 		"tangiblebookvaluepersharettm": 22.874532667669722,
-		"workingcapitalttm": -591561000
+		"workingcapitalttm": -591561000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"DHY": {
 		"averagepayablesttm": 5083680.5,
@@ -3075,7 +3177,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 2.3864703393187345,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"DLR": {
 		"averagepayablesttm": null,
@@ -3132,7 +3236,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020470764917901483,
 		"tangibleassetvaluettm": 15288079000,
 		"tangiblebookvaluepersharettm": 25.48027587476023,
-		"workingcapitalttm": -878692000
+		"workingcapitalttm": -878692000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"DOC": {
 		"averagepayablesttm": 4832500.0,
@@ -3189,7 +3295,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02911304163670136,
 		"tangibleassetvaluettm": 2329630000,
 		"tangiblebookvaluepersharettm": 11.065564726169892,
-		"workingcapitalttm": -167764000
+		"workingcapitalttm": -167764000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"DRE": {
 		"averagepayablesttm": 75571500,
@@ -3246,7 +3354,9 @@
 		"stockbasedcompensationtorevenuettm": -9.18455366383208e-05,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.07440582122585,
-		"workingcapitalttm": 327246000
+		"workingcapitalttm": 327246000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"DX": {
 		"averagepayablesttm": 914000.0,
@@ -3303,7 +3413,9 @@
 		"stockbasedcompensationtorevenuettm": 0.004725010624071144,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 27.297934990706715,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"EAD": {
 		"averagepayablesttm": 10011840.5,
@@ -3360,7 +3472,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 7.610643306281333,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"EARN": {
 		"averagepayablesttm": 2801500.0,
@@ -3417,7 +3531,9 @@
 		"stockbasedcompensationtorevenuettm": 0.005259809119830329,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.238530999321272,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ECF": {
 		"averagepayablesttm": 127178.0,
@@ -3474,7 +3590,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.633343341137373,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ELS": {
 		"averagepayablesttm": 136140000,
@@ -3531,7 +3649,9 @@
 		"stockbasedcompensationtorevenuettm": 0.011790452436476025,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 7.154613518040147,
-		"workingcapitalttm": -303368000
+		"workingcapitalttm": -303368000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"EPD": {
 		"averagepayablesttm": 842050000,
@@ -3588,7 +3708,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 25.780608535871988,
-		"workingcapitalttm": 46000000
+		"workingcapitalttm": 46000000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"EQC": {
 		"averagepayablesttm": 20797500,
@@ -3645,7 +3767,9 @@
 		"stockbasedcompensationtorevenuettm": 0.25851789309605766,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 26.48823789773938,
-		"workingcapitalttm": 2959602000
+		"workingcapitalttm": 2959602000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"EQR": {
 		"averagepayablesttm": 137697000,
@@ -3702,7 +3826,9 @@
 		"stockbasedcompensationtorevenuettm": 0.009653389904793,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 28.34490437305254,
-		"workingcapitalttm": -788171000
+		"workingcapitalttm": -788171000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"ESS": {
 		"averagepayablesttm": 155764000,
@@ -3759,7 +3885,9 @@
 		"stockbasedcompensationtorevenuettm": 0.005579682222767682,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 95.56804609720753,
-		"workingcapitalttm": 296618000
+		"workingcapitalttm": 296618000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"EXR": {
 		"averagepayablesttm": 129528000,
@@ -3816,7 +3944,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0122615301272876,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 25.109539941789393,
-		"workingcapitalttm": -481338000
+		"workingcapitalttm": -481338000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"FCPT": {
 		"averagepayablesttm": 494000.0,
@@ -3873,7 +4003,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02234394613716764,
 		"tangibleassetvaluettm": 755604000,
 		"tangiblebookvaluepersharettm": 9.94609877463685,
-		"workingcapitalttm": 30528000
+		"workingcapitalttm": 30528000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"FDUS": {
 		"averagepayablesttm": 3674000.0,
@@ -3930,7 +4062,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 16.90081596241826,
-		"workingcapitalttm": 59738000
+		"workingcapitalttm": 59738000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"FR": {
 		"averagepayablesttm": 107201000,
@@ -3987,7 +4121,9 @@
 		"stockbasedcompensationtorevenuettm": 0.09520117018839329,
 		"tangibleassetvaluettm": 1957001000,
 		"tangiblebookvaluepersharettm": 15.300665347959,
-		"workingcapitalttm": 12527000
+		"workingcapitalttm": 12527000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"FRT": {
 		"averagepayablesttm": 241578000,
@@ -4044,7 +4180,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 33.9002108222066,
-		"workingcapitalttm": 848206000
+		"workingcapitalttm": 848206000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"FSP": {
 		"averagepayablesttm": null,
@@ -4101,7 +4239,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0013917215093590847,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 7.039952295766249,
-		"workingcapitalttm": 41610000
+		"workingcapitalttm": 41610000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"FTF": {
 		"averagepayablesttm": 30283784.5,
@@ -4158,7 +4298,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.429669423242567,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"GBDC": {
 		"averagepayablesttm": 17485500,
@@ -4215,7 +4357,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.939707928178265,
-		"workingcapitalttm": -4101670000
+		"workingcapitalttm": -4101670000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"GEO": {
 		"averagepayablesttm": 88908000,
@@ -4272,7 +4416,9 @@
 		"stockbasedcompensationtorevenuettm": 0.010168086607452114,
 		"tangibleassetvaluettm": 724335000,
 		"tangiblebookvaluepersharettm": -0.2579603484529889,
-		"workingcapitalttm": 300027000
+		"workingcapitalttm": 300027000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GGN": {
 		"averagepayablesttm": null,
@@ -4386,7 +4532,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0077282454712602104,
 		"tangibleassetvaluettm": 232728000,
 		"tangiblebookvaluepersharettm": 3.40728727399627,
-		"workingcapitalttm": 86052000
+		"workingcapitalttm": 86052000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GLO": {
 		"averagepayablesttm": null,
@@ -4500,7 +4648,9 @@
 		"stockbasedcompensationtorevenuettm": 0.018405499877905716,
 		"tangibleassetvaluettm": 2031628000,
 		"tangiblebookvaluepersharettm": 8.727861668993663,
-		"workingcapitalttm": 173767000
+		"workingcapitalttm": 173767000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GLQ": {
 		"averagepayablesttm": null,
@@ -4614,7 +4764,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0614703811726843,
 		"tangibleassetvaluettm": 492222000,
 		"tangiblebookvaluepersharettm": 9.233145374114788,
-		"workingcapitalttm": -419551000
+		"workingcapitalttm": -419551000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GNL": {
 		"averagepayablesttm": 29167500,
@@ -4671,7 +4823,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0298425872588552,
 		"tangibleassetvaluettm": 939265000,
 		"tangiblebookvaluepersharettm": 10.496574768391762,
-		"workingcapitalttm": -1114641000
+		"workingcapitalttm": -1114641000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GOOD": {
 		"averagepayablesttm": 4953500.0,
@@ -4728,7 +4882,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 99106000,
 		"tangiblebookvaluepersharettm": 2.774981886009358,
-		"workingcapitalttm": 13868000
+		"workingcapitalttm": 13868000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"GTY": {
 		"averagepayablesttm": 45486000,
@@ -4785,7 +4941,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02212872580612744,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.512012217359592,
-		"workingcapitalttm": 63804000
+		"workingcapitalttm": 63804000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"HIW": {
 		"averagepayablesttm": null,
@@ -4842,7 +5000,9 @@
 		"stockbasedcompensationtorevenuettm": 0.009086714615280229,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 23.83937783937784,
-		"workingcapitalttm": 161358000
+		"workingcapitalttm": 161358000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"HMG": {
 		"averagepayablesttm": 300289.0,
@@ -4899,7 +5059,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 18.909829555382586,
-		"workingcapitalttm": 8470664.0
+		"workingcapitalttm": 8470664.0,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"HPP": {
 		"averagepayablesttm": null,
@@ -4956,7 +5118,9 @@
 		"stockbasedcompensationtorevenuettm": 0.026317442603808305,
 		"tangibleassetvaluettm": 3655561000,
 		"tangiblebookvaluepersharettm": 24.17928546396965,
-		"workingcapitalttm": 148426000
+		"workingcapitalttm": 148426000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"HR": {
 		"averagepayablesttm": null,
@@ -5013,7 +5177,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020472680986853696,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.398295069681641,
-		"workingcapitalttm": 1916000.0
+		"workingcapitalttm": 1916000.0,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"HRZN": {
 		"averagepayablesttm": null,
@@ -5070,7 +5236,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 11.239516154142024,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"HTA": {
 		"averagepayablesttm": null,
@@ -5127,7 +5295,9 @@
 		"stockbasedcompensationtorevenuettm": 0.012160170269257075,
 		"tangibleassetvaluettm": 2561690000,
 		"tangiblebookvaluepersharettm": 11.710422257066188,
-		"workingcapitalttm": 101919000
+		"workingcapitalttm": 101919000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"IFN": {
 		"averagepayablesttm": 492175.0,
@@ -5184,7 +5354,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 17.776854349705516,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"IIPR": {
 		"averagepayablesttm": 54786500,
@@ -5241,7 +5413,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03322009938622873,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 63.526841488429305,
-		"workingcapitalttm": 21703000
+		"workingcapitalttm": 21703000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"ILPT": {
 		"averagepayablesttm": 14718000,
@@ -5298,7 +5472,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.370453952317352,
-		"workingcapitalttm": -143499000
+		"workingcapitalttm": -143499000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"IRCP": {
 		"averagepayablesttm": 4726500000,
@@ -5355,7 +5531,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 84446000000,
 		"tangiblebookvaluepersharettm": 2676.872376834718,
-		"workingcapitalttm": 2452000000
+		"workingcapitalttm": 2452000000,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"IRM": {
 		"averagepayablesttm": 343461500,
@@ -5412,7 +5590,9 @@
 		"stockbasedcompensationtorevenuettm": 0.010118783948099532,
 		"tangibleassetvaluettm": -311897000,
 		"tangiblebookvaluepersharettm": -16.7361786421754,
-		"workingcapitalttm": -752956000
+		"workingcapitalttm": -752956000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"IRT": {
 		"averagepayablesttm": 24975500,
@@ -5469,7 +5649,9 @@
 		"stockbasedcompensationtorevenuettm": 0.029040005935048314,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 7.033300381549302,
-		"workingcapitalttm": -25614000
+		"workingcapitalttm": -25614000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"JBGS": {
 		"averagepayablesttm": null,
@@ -5526,7 +5708,9 @@
 		"stockbasedcompensationtorevenuettm": 0.10153220583533501,
 		"tangibleassetvaluettm": 3121034000,
 		"tangiblebookvaluepersharettm": 23.726881556940853,
-		"workingcapitalttm": 399167000
+		"workingcapitalttm": 399167000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"KIM": {
 		"averagepayablesttm": null,
@@ -5583,7 +5767,9 @@
 		"stockbasedcompensationtorevenuettm": 0.005129559343300396,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.30580176714887,
-		"workingcapitalttm": 1217130000
+		"workingcapitalttm": 1217130000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"KRC": {
 		"averagepayablesttm": 426826000,
@@ -5640,7 +5826,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03433601945842897,
 		"tangibleassetvaluettm": 5607580000,
 		"tangiblebookvaluepersharettm": 48.198118731567384,
-		"workingcapitalttm": 1635721000
+		"workingcapitalttm": 1635721000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"KREF": {
 		"averagepayablesttm": 11282500,
@@ -5697,7 +5885,9 @@
 		"stockbasedcompensationtorevenuettm": 0.04492874980547919,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 18.93902972177276,
-		"workingcapitalttm": 204854000
+		"workingcapitalttm": 204854000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"KRG": {
 		"averagepayablesttm": 76989500,
@@ -5754,7 +5944,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02508755843492116,
 		"tangibleassetvaluettm": 1228352000,
 		"tangiblebookvaluepersharettm": 14.589400932392266,
-		"workingcapitalttm": 239873000
+		"workingcapitalttm": 239873000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LAMR": {
 		"averagepayablesttm": 11699500,
@@ -5811,7 +6003,9 @@
 		"stockbasedcompensationtorevenuettm": 0.012399163040188682,
 		"tangibleassetvaluettm": 293922000,
 		"tangiblebookvaluepersharettm": -16.029229340611664,
-		"workingcapitalttm": -229084000
+		"workingcapitalttm": -229084000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LAND": {
 		"averagepayablesttm": 8827000.0,
@@ -5868,7 +6062,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 413277000,
 		"tangiblebookvaluepersharettm": 18.792757551159685,
-		"workingcapitalttm": -564591000
+		"workingcapitalttm": -564591000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LFT": {
 		"averagepayablesttm": 582244.5,
@@ -5925,7 +6121,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0004044736981860804,
 		"tangibleassetvaluettm": 113366845,
 		"tangiblebookvaluepersharettm": 4.544966695175229,
-		"workingcapitalttm": 11427134
+		"workingcapitalttm": 11427134,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"LOAN": {
 		"averagepayablesttm": 150761.0,
@@ -5982,7 +6180,9 @@
 		"stockbasedcompensationtorevenuettm": 0.002308755385740997,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 3.320906501100244,
-		"workingcapitalttm": -63198.0
+		"workingcapitalttm": -63198.0,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LSI": {
 		"averagepayablesttm": 110317000,
@@ -6039,7 +6239,9 @@
 		"stockbasedcompensationtorevenuettm": 0.007643865290916224,
 		"tangibleassetvaluettm": 2361598000,
 		"tangiblebookvaluepersharettm": 50.00859523458511,
-		"workingcapitalttm": -50816000
+		"workingcapitalttm": -50816000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LTC": {
 		"averagepayablesttm": null,
@@ -6096,7 +6298,9 @@
 		"stockbasedcompensationtorevenuettm": 0.046257677521262086,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 19.559360613810743,
-		"workingcapitalttm": 316088000
+		"workingcapitalttm": 316088000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"LXP": {
 		"averagepayablesttm": 50113000,
@@ -6153,7 +6357,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 1605932000,
 		"tangiblebookvaluepersharettm": 5.830925194206079,
-		"workingcapitalttm": 141838000
+		"workingcapitalttm": 141838000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MAA": {
 		"averagepayablesttm": null,
@@ -6210,7 +6416,9 @@
 		"stockbasedcompensationtorevenuettm": 0.008914230417107429,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 52.6813841751048,
-		"workingcapitalttm": -839057000
+		"workingcapitalttm": -839057000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MAC": {
 		"averagepayablesttm": 64070500,
@@ -6267,7 +6475,9 @@
 		"stockbasedcompensationtorevenuettm": 0.018210855799481788,
 		"tangibleassetvaluettm": 2830174000,
 		"tangiblebookvaluepersharettm": 17.846979442552655,
-		"workingcapitalttm": 947665000
+		"workingcapitalttm": 947665000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"MGP": {
 		"averagepayablesttm": 99747500,
@@ -6324,7 +6534,9 @@
 		"stockbasedcompensationtorevenuettm": 0.00379742438918969,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 37.50547863443103,
-		"workingcapitalttm": -98715000
+		"workingcapitalttm": -98715000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MITT": {
 		"averagepayablesttm": 27549000,
@@ -6381,7 +6593,9 @@
 		"stockbasedcompensationtorevenuettm": 0.005383761734800996,
 		"tangibleassetvaluettm": 452305000,
 		"tangiblebookvaluepersharettm": 10.680669689241522,
-		"workingcapitalttm": -292792000
+		"workingcapitalttm": -292792000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"MMP": {
 		"averagepayablesttm": 101110500,
@@ -6438,7 +6652,9 @@
 		"stockbasedcompensationtorevenuettm": 0.007158935834096898,
 		"tangibleassetvaluettm": 2252760000,
 		"tangiblebookvaluepersharettm": 9.838993170626987,
-		"workingcapitalttm": -82618000
+		"workingcapitalttm": -82618000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MNDO": {
 		"averagepayablesttm": 1646500.0,
@@ -6495,7 +6711,9 @@
 		"stockbasedcompensationtorevenuettm": 0.006496281733481494,
 		"tangibleassetvaluettm": 22417000,
 		"tangiblebookvaluepersharettm": 0.7162636701113675,
-		"workingcapitalttm": 14047000
+		"workingcapitalttm": 14047000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"MNR": {
 		"averagepayablesttm": null,
@@ -6552,7 +6770,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0018084527999542165,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 11.557712262711346,
-		"workingcapitalttm": 176719000
+		"workingcapitalttm": 176719000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MPLX": {
 		"averagepayablesttm": 157000000,
@@ -6609,7 +6829,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 11923000000,
 		"tangiblebookvaluepersharettm": 4.113789778206365,
-		"workingcapitalttm": 178000000
+		"workingcapitalttm": 178000000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"MPW": {
 		"averagepayablesttm": 434965000,
@@ -6666,7 +6888,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03774621008967066,
 		"tangibleassetvaluettm": 6044776000,
 		"tangiblebookvaluepersharettm": 11.256503222514585,
-		"workingcapitalttm": 1428713000
+		"workingcapitalttm": 1428713000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"NEWT": {
 		"averagepayablesttm": 27827000,
@@ -6723,7 +6947,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.30723858059645,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"NHI": {
 		"averagepayablesttm": 24431000,
@@ -6780,7 +7006,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020151301123112895,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 34.835459040540755,
-		"workingcapitalttm": 427852000
+		"workingcapitalttm": 427852000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"NHS": {
 		"averagepayablesttm": null,
@@ -6894,7 +7122,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 13954515000,
 		"tangiblebookvaluepersharettm": 9.946447495040822,
-		"workingcapitalttm": -1921932000
+		"workingcapitalttm": -1921932000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"NMFC": {
 		"averagepayablesttm": 45397000,
@@ -6951,7 +7181,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.041750128801429,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"NNN": {
 		"averagepayablesttm": null,
@@ -7008,7 +7240,9 @@
 		"stockbasedcompensationtorevenuettm": 0.006500711344629536,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 24.559574956769975,
-		"workingcapitalttm": 324614000
+		"workingcapitalttm": 324614000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"NREF": {
 		"averagepayablesttm": 1009389.5,
@@ -7122,7 +7356,9 @@
 		"stockbasedcompensationtorevenuettm": 0.010621030971724553,
 		"tangibleassetvaluettm": 1541976000,
 		"tangiblebookvaluepersharettm": 22.151848642403234,
-		"workingcapitalttm": -192254000
+		"workingcapitalttm": -192254000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"NTST": {
 		"averagepayablesttm": 660000.0,
@@ -7179,7 +7415,9 @@
 		"stockbasedcompensationtorevenuettm": 0.033124822291725906,
 		"tangibleassetvaluettm": 453049000,
 		"tangiblebookvaluepersharettm": 23.844684210526317,
-		"workingcapitalttm": 102472000
+		"workingcapitalttm": 102472000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"NXRT": {
 		"averagepayablesttm": 10540000,
@@ -7236,7 +7474,9 @@
 		"stockbasedcompensationtorevenuettm": 0.028488101365095705,
 		"tangibleassetvaluettm": 423214000,
 		"tangiblebookvaluepersharettm": 16.882639221318016,
-		"workingcapitalttm": -141703000
+		"workingcapitalttm": -141703000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"NYC": {
 		"averagepayablesttm": 7697500.0,
@@ -7293,7 +7533,9 @@
 		"stockbasedcompensationtorevenuettm": 0.09845246379693144,
 		"tangibleassetvaluettm": 271115000,
 		"tangiblebookvaluepersharettm": 21.227001569662054,
-		"workingcapitalttm": -381412000
+		"workingcapitalttm": -381412000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"O": {
 		"averagepayablesttm": 220752000,
@@ -7350,7 +7592,9 @@
 		"stockbasedcompensationtorevenuettm": 0.008738827966154154,
 		"tangibleassetvaluettm": 9746867000,
 		"tangiblebookvaluepersharettm": 26.19693342106635,
-		"workingcapitalttm": -299910000
+		"workingcapitalttm": -299910000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"OCCI": {
 		"averagepayablesttm": null,
@@ -7407,7 +7651,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.272772379446689,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"OFC": {
 		"averagepayablesttm": 119591000,
@@ -7464,7 +7710,9 @@
 		"stockbasedcompensationtorevenuettm": 0.011223592253194518,
 		"tangibleassetvaluettm": 1638655000,
 		"tangiblebookvaluepersharettm": 14.645493707993708,
-		"workingcapitalttm": 69172000
+		"workingcapitalttm": 69172000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"OFS": {
 		"averagepayablesttm": null,
@@ -7521,7 +7769,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 11.981982896833836,
-		"workingcapitalttm": -251437000
+		"workingcapitalttm": -251437000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"OHI": {
 		"averagepayablesttm": null,
@@ -7578,7 +7828,9 @@
 		"stockbasedcompensationtorevenuettm": 0.021446132785763176,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.034703231687391,
-		"workingcapitalttm": 821404000
+		"workingcapitalttm": 821404000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"OLP": {
 		"averagepayablesttm": null,
@@ -7635,7 +7887,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.419787031945209,
-		"workingcapitalttm": 927000.0
+		"workingcapitalttm": 927000.0,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"OPI": {
 		"averagepayablesttm": 110048500,
@@ -7692,7 +7946,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 33.65789746890638,
-		"workingcapitalttm": 179283000
+		"workingcapitalttm": 179283000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"OXSQ": {
 		"averagepayablesttm": null,
@@ -7749,7 +8005,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 6.836109832449368,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PAGP": {
 		"averagepayablesttm": 2912000000,
@@ -7806,7 +8064,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0008545547769612033,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 61.82258064516129,
-		"workingcapitalttm": -253000000
+		"workingcapitalttm": -253000000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PCH": {
 		"averagepayablesttm": 12609500,
@@ -7863,7 +8123,9 @@
 		"stockbasedcompensationtorevenuettm": 0.006835024527015123,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 21.985046200544588,
-		"workingcapitalttm": 343166000
+		"workingcapitalttm": 343166000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PDM": {
 		"averagepayablesttm": 102090000,
@@ -7920,7 +8182,9 @@
 		"stockbasedcompensationtorevenuettm": 0.017260154426969702,
 		"tangibleassetvaluettm": 1804186000,
 		"tangiblebookvaluepersharettm": 13.758155851970727,
-		"workingcapitalttm": 176455000
+		"workingcapitalttm": 176455000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"PEAK": {
 		"averagepayablesttm": null,
@@ -7977,7 +8241,9 @@
 		"stockbasedcompensationtorevenuettm": 0.011155108148443466,
 		"tangibleassetvaluettm": 6820763000,
 		"tangiblebookvaluepersharettm": 12.662017639447612,
-		"workingcapitalttm": -573735000
+		"workingcapitalttm": -573735000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"PFLT": {
 		"averagepayablesttm": null,
@@ -8034,7 +8300,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 12.714673014396908,
-		"workingcapitalttm": -79632689
+		"workingcapitalttm": -79632689,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PGRE": {
 		"averagepayablesttm": 109580500,
@@ -8091,7 +8359,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02716831338019755,
 		"tangibleassetvaluettm": 4361774000,
 		"tangiblebookvaluepersharettm": 19.94719755363894,
-		"workingcapitalttm": 366744000
+		"workingcapitalttm": 366744000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PINE": {
 		"averagepayablesttm": 265000.0,
@@ -8148,7 +8418,9 @@
 		"stockbasedcompensationtorevenuettm": 0.004612840873444539,
 		"tangibleassetvaluettm": 116803000,
 		"tangiblebookvaluepersharettm": 15.439045161880443,
-		"workingcapitalttm": 389000.0
+		"workingcapitalttm": 389000.0,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PLD": {
 		"averagepayablesttm": null,
@@ -8205,7 +8477,9 @@
 		"stockbasedcompensationtorevenuettm": 0.024431035343179693,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 49.235861260788255,
-		"workingcapitalttm": 539651000
+		"workingcapitalttm": 539651000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"PLYM": {
 		"averagepayablesttm": null,
@@ -8262,7 +8536,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01305198289740172,
 		"tangibleassetvaluettm": 302785000,
 		"tangiblebookvaluepersharettm": 11.129868474313506,
-		"workingcapitalttm": -23874000
+		"workingcapitalttm": -23874000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PMT": {
 		"averagepayablesttm": 123823000,
@@ -8319,7 +8595,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0049076404024112,
 		"tangibleassetvaluettm": 2338992000,
 		"tangiblebookvaluepersharettm": 23.89359702529318,
-		"workingcapitalttm": -2927789000
+		"workingcapitalttm": -2927789000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PNNT": {
 		"averagepayablesttm": 22082137.5,
@@ -8376,7 +8654,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.236273028433619,
-		"workingcapitalttm": -339011969
+		"workingcapitalttm": -339011969,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PSA": {
 		"averagepayablesttm": null,
@@ -8433,7 +8713,9 @@
 		"stockbasedcompensationtorevenuettm": 0.01374852748447688,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 49.35150133725825,
-		"workingcapitalttm": -208687000
+		"workingcapitalttm": -208687000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PSB": {
 		"averagepayablesttm": null,
@@ -8490,7 +8772,9 @@
 		"stockbasedcompensationtorevenuettm": 0.015537041206935375,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 71.75901072922349,
-		"workingcapitalttm": 27249000
+		"workingcapitalttm": 27249000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"PSEC": {
 		"averagepayablesttm": 45106500,
@@ -8547,7 +8831,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 9.590335566433184,
-		"workingcapitalttm": -1715081000
+		"workingcapitalttm": -1715081000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"QTS": {
 		"averagepayablesttm": 194911000,
@@ -8604,7 +8890,9 @@
 		"stockbasedcompensationtorevenuettm": 0.05154973149141965,
 		"tangibleassetvaluettm": 1724746000,
 		"tangiblebookvaluepersharettm": 24.066649079792683,
-		"workingcapitalttm": -91047000
+		"workingcapitalttm": -91047000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"RC": {
 		"averagepayablesttm": 27145500,
@@ -8661,7 +8949,9 @@
 		"stockbasedcompensationtorevenuettm": 0.016377077654359907,
 		"tangibleassetvaluettm": 1033149000,
 		"tangiblebookvaluepersharettm": 17.870016124572036,
-		"workingcapitalttm": -2386037000
+		"workingcapitalttm": -2386037000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"REG": {
 		"averagepayablesttm": 293840500,
@@ -8718,7 +9008,9 @@
 		"stockbasedcompensationtorevenuettm": 0.012590099481741824,
 		"tangibleassetvaluettm": 5864260000,
 		"tangiblebookvaluepersharettm": 33.52893360350596,
-		"workingcapitalttm": 14096000
+		"workingcapitalttm": 14096000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"RYN": {
 		"averagepayablesttm": 29936500,
@@ -8775,7 +9067,9 @@
 		"stockbasedcompensationtorevenuettm": 0.010956813326072592,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.85297473495135,
-		"workingcapitalttm": 89235000
+		"workingcapitalttm": 89235000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SACH": {
 		"averagepayablesttm": 456164.5,
@@ -8832,7 +9126,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0010529680283937965,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 3.8269461088403145,
-		"workingcapitalttm": -94259781
+		"workingcapitalttm": -94259781,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SBRA": {
 		"averagepayablesttm": 134890500,
@@ -8889,7 +9185,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013023863507915717,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 16.568420045752603,
-		"workingcapitalttm": 150827000
+		"workingcapitalttm": 150827000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SCM": {
 		"averagepayablesttm": null,
@@ -8946,7 +9244,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.03206624775743,
-		"workingcapitalttm": -67791261000
+		"workingcapitalttm": -67791261000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"SELF": {
 		"averagepayablesttm": 1400537.0,
@@ -9003,7 +9303,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013679827831569773,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 4.223373762523252,
-		"workingcapitalttm": 146824.0
+		"workingcapitalttm": 146824.0,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SKT": {
 		"averagepayablesttm": null,
@@ -9060,7 +9362,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02303600825216593,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 5.094439522423322,
-		"workingcapitalttm": 232897000
+		"workingcapitalttm": 232897000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SLG": {
 		"averagepayablesttm": 152146000,
@@ -9117,7 +9421,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 78.35986319637611,
-		"workingcapitalttm": 357892000
+		"workingcapitalttm": 357892000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"SLRC": {
 		"averagepayablesttm": 387436000,
@@ -9174,7 +9480,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 20.26003940386778,
-		"workingcapitalttm": -355804000
+		"workingcapitalttm": -355804000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"SPG": {
 		"averagepayablesttm": 1253888000,
@@ -9231,7 +9539,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 10.702224809275311,
-		"workingcapitalttm": -952902000
+		"workingcapitalttm": -952902000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SQFT": {
 		"averagepayablesttm": 5196486.5,
@@ -9288,7 +9598,9 @@
 		"stockbasedcompensationtorevenuettm": 0.04538770699092699,
 		"tangibleassetvaluettm": 46012442,
 		"tangiblebookvaluepersharettm": 4.885325846663361,
-		"workingcapitalttm": 46365208
+		"workingcapitalttm": 46365208,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"SRC": {
 		"averagepayablesttm": null,
@@ -9345,7 +9657,9 @@
 		"stockbasedcompensationtorevenuettm": 0.025334752579439478,
 		"tangibleassetvaluettm": 3159319000,
 		"tangiblebookvaluepersharettm": 25.58329705197599,
-		"workingcapitalttm": 147116000
+		"workingcapitalttm": 147116000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"STAG": {
 		"averagepayablesttm": 65182500,
@@ -9402,7 +9716,9 @@
 		"stockbasedcompensationtorevenuettm": 0.026949552778546198,
 		"tangibleassetvaluettm": 2207584000,
 		"tangiblebookvaluepersharettm": 13.934128637253046,
-		"workingcapitalttm": -166143000
+		"workingcapitalttm": -166143000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"STAY": {
 		"averagepayablesttm": 241258000,
@@ -9459,7 +9775,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0011800082272259377,
 		"tangibleassetvaluettm": 1099641000,
 		"tangiblebookvaluepersharettm": 5.940055350669365,
-		"workingcapitalttm": 145958000
+		"workingcapitalttm": 145958000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"STOR": {
 		"averagepayablesttm": null,
@@ -9516,7 +9834,9 @@
 		"stockbasedcompensationtorevenuettm": 0.030261997732711928,
 		"tangibleassetvaluettm": 5058780000,
 		"tangiblebookvaluepersharettm": 18.99178853056173,
-		"workingcapitalttm": 595411000
+		"workingcapitalttm": 595411000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"STWD": {
 		"averagepayablesttm": 192530000,
@@ -9573,7 +9893,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020693296686677208,
 		"tangibleassetvaluettm": 4788013000,
 		"tangiblebookvaluepersharettm": 15.982574412587931,
-		"workingcapitalttm": 172975000
+		"workingcapitalttm": 172975000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"SUNS": {
 		"averagepayablesttm": null,
@@ -9630,7 +9952,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.910552622668753,
-		"workingcapitalttm": 175948.0
+		"workingcapitalttm": 175948.0,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"TCPC": {
 		"averagepayablesttm": null,
@@ -9687,7 +10011,9 @@
 		"stockbasedcompensationtorevenuettm": 0.029173069733539645,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.242640909364736,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"TPVG": {
 		"averagepayablesttm": null,
@@ -9744,7 +10070,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 13.01123668274991,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"TRMT": {
 		"averagepayablesttm": 2894500.0,
@@ -9801,7 +10129,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03293140135778701,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 11.025331871879187,
-		"workingcapitalttm": 10142000
+		"workingcapitalttm": 10142000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"TSLX": {
 		"averagepayablesttm": null,
@@ -9858,7 +10188,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 17.008354660523526,
-		"workingcapitalttm": null
+		"workingcapitalttm": null,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"UBA": {
 		"averagepayablesttm": null,
@@ -9915,7 +10247,9 @@
 		"stockbasedcompensationtorevenuettm": 0.042455749473944794,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 14.614624098867147,
-		"workingcapitalttm": 32368000
+		"workingcapitalttm": 32368000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"UBP": {
 		"averagepayablesttm": 12705000,
@@ -9972,7 +10306,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03149594844265992,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 8.200785700668296,
-		"workingcapitalttm": -304663000
+		"workingcapitalttm": -304663000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"UDR": {
 		"averagepayablesttm": 107608500,
@@ -10029,7 +10365,9 @@
 		"stockbasedcompensationtorevenuettm": -0.0015526665984235848,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 10.17208982352961,
-		"workingcapitalttm": -71623000
+		"workingcapitalttm": -71623000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"UE": {
 		"averagepayablesttm": null,
@@ -10086,7 +10424,9 @@
 		"stockbasedcompensationtorevenuettm": 0.04942598587227283,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 8.561937822770956,
-		"workingcapitalttm": 447587000
+		"workingcapitalttm": 447587000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"UHT": {
 		"averagepayablesttm": null,
@@ -10143,7 +10483,9 @@
 		"stockbasedcompensationtorevenuettm": 0.02182340600200675,
 		"tangibleassetvaluettm": 147654000,
 		"tangiblebookvaluepersharettm": 10.740034914169334,
-		"workingcapitalttm": -242168000
+		"workingcapitalttm": -242168000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"UMH": {
 		"averagepayablesttm": 4528500.0,
@@ -10200,7 +10542,9 @@
 		"stockbasedcompensationtorevenuettm": 0.00888465903717015,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 12.86660216626944,
-		"workingcapitalttm": 206274000
+		"workingcapitalttm": 206274000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"UNIT": {
 		"averagepayablesttm": 145856000,
@@ -10257,7 +10601,9 @@
 		"stockbasedcompensationtorevenuettm": 0.013098703730443004,
 		"tangibleassetvaluettm": -2540703000,
 		"tangiblebookvaluepersharettm": -15.867293768366203,
-		"workingcapitalttm": -1444730000
+		"workingcapitalttm": -1444730000,
+		"ratingrecommendation": "Neutral",
+		"ratingscore": 3
 	},
 	"VER": {
 		"averagepayablesttm": 3575500.0,
@@ -10314,7 +10660,9 @@
 		"stockbasedcompensationtorevenuettm": 0.011086974848235323,
 		"tangibleassetvaluettm": 4866388000,
 		"tangiblebookvaluepersharettm": 15.398076148473583,
-		"workingcapitalttm": 451182000
+		"workingcapitalttm": 451182000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"VICI": {
 		"averagepayablesttm": null,
@@ -10371,7 +10719,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0006892792904661595,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 17.893831948283005,
-		"workingcapitalttm": 3222820000
+		"workingcapitalttm": 3222820000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"VNO": {
 		"averagepayablesttm": null,
@@ -10428,7 +10778,9 @@
 		"stockbasedcompensationtorevenuettm": 0.03718507119728978,
 		"tangibleassetvaluettm": 6730795000,
 		"tangiblebookvaluepersharettm": 35.16281122987389,
-		"workingcapitalttm": 1622918000
+		"workingcapitalttm": 1622918000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"VTR": {
 		"averagepayablesttm": 1121172500,
@@ -10485,7 +10837,9 @@
 		"stockbasedcompensationtorevenuettm": 0.007311397967947718,
 		"tangibleassetvaluettm": 8854812000,
 		"tangiblebookvaluepersharettm": 20.826468162564822,
-		"workingcapitalttm": -345367000
+		"workingcapitalttm": -345367000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"WELL": {
 		"averagepayablesttm": null,
@@ -10542,7 +10896,9 @@
 		"stockbasedcompensationtorevenuettm": 0.006098010316875461,
 		"tangibleassetvaluettm": 15184194000,
 		"tangiblebookvaluepersharettm": 36.228158306590196,
-		"workingcapitalttm": 2960916000
+		"workingcapitalttm": 2960916000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"WHF": {
 		"averagepayablesttm": 6581500.0,
@@ -10599,7 +10955,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.295623471983763,
-		"workingcapitalttm": -328705000
+		"workingcapitalttm": -328705000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"WPC": {
 		"averagepayablesttm": 610981500,
@@ -10656,7 +11014,9 @@
 		"stockbasedcompensationtorevenuettm": 0.016130775302570913,
 		"tangibleassetvaluettm": 3726350000,
 		"tangiblebookvaluepersharettm": 15.968270218066928,
-		"workingcapitalttm": -558706000
+		"workingcapitalttm": -558706000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"WRE": {
 		"averagepayablesttm": 59556000,
@@ -10713,7 +11073,9 @@
 		"stockbasedcompensationtorevenuettm": 0.020173519562028026,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 15.387464016206035,
-		"workingcapitalttm": 37800000
+		"workingcapitalttm": 37800000,
+		"ratingrecommendation": "Buy",
+		"ratingscore": 4
 	},
 	"WRI": {
 		"averagepayablesttm": null,
@@ -10770,7 +11132,9 @@
 		"stockbasedcompensationtorevenuettm": 0.0,
 		"tangibleassetvaluettm": 1658516000,
 		"tangiblebookvaluepersharettm": 13.108933116236425,
-		"workingcapitalttm": 48622000
+		"workingcapitalttm": 48622000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	},
 	"WSR": {
 		"averagepayablesttm": 46040500,
@@ -10827,6 +11191,8 @@
 		"stockbasedcompensationtorevenuettm": 0.05338729634976284,
 		"tangibleassetvaluettm": null,
 		"tangiblebookvaluepersharettm": 7.9626308977526765,
-		"workingcapitalttm": 11033000
+		"workingcapitalttm": 11033000,
+		"ratingrecommendation": "Strong Buy",
+		"ratingscore": 5
 	}
 }
