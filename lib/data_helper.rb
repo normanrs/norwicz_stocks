@@ -5,7 +5,7 @@ require 'yaml'
 module DataHelper
   def stock_list
     if env_config == 'dev'
-      ['AAPL']
+      %w[AAPL WSR]
     else
       stocks
     end
@@ -24,16 +24,6 @@ module DataHelper
     !ENV['AWS_ACCESS_KEY_ID'].nil?
   end
 
-  def top_reit?(hash_in)
-    hash_in.dig('dividendyieldpercentagettm').to_f > 4.5 &&
-      hash_in.dig('freecashflowpersharettm').to_f.positive? &&
-      hash_in.dig('interestcoveragettm').to_f > 1.2 &&
-      hash_in.dig('netcurrentassetvaluettm').to_f > -50.0 &&
-      hash_in.dig('netdebttoebitdattm').to_f.between?(-1.0, 15.0) &&
-      hash_in.dig('netincomepersharettm').to_f.positive? &&
-      hash_in.dig('payoutratiottm').to_f.between?(0.2, 2.1)
-  end
-
   def top_reits(data)
     data.select do |_key, value|
       top_reit?(value)
@@ -42,6 +32,31 @@ module DataHelper
 
   def deep_dup(obj)
     Marshal.load(Marshal.dump(obj))
+  end
+
+  def top_reit?(hash_in, verbose = false)
+    unmet = []
+    reit_criteria.each do |k, v|
+      met = v.include?(hash_in.dig(k))
+      unmet << {k => hash_in.dig(k)} unless met
+    end
+    if verbose
+      unmet
+    else
+      unmet.empty?
+    end
+  end
+
+  def reit_criteria
+    {
+      'dividendyieldpercentagettm' => (4.5..99999),
+      'freecashflowpersharettm' => (0..99999),
+      'interestcoveragettm' => (1.2..99999),
+      'netcurrentassetvaluettm' => (-50.0..99999),
+      'netdebttoebitdattm' => (-1.0..15.0),
+      'netincomepersharettm' => (0..99999),
+      'payoutratiottm' => (0.2...2.1)
+    }
   end
 
   def stocks
