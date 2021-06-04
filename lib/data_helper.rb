@@ -40,6 +40,10 @@ module DataHelper
     end.keys
   end
 
+  def deep_dup(obj)
+    Marshal.load(Marshal.dump(obj))
+  end
+
   def stocks
     %w[
       AAT

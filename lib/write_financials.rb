@@ -45,11 +45,16 @@ class WriteFinancials
     end
 
     def update_stock_data(existing_data)
-      write_data = existing_data
-      write_data.each { |k, _v| write_data[k].merge!(new_financials.dig(k) || {}) }
+      write_data = merge_hashes(existing_data, new_financials)
       write_json("#{FILESOURCE}stock_data.json", write_data)
       headers = write_data.values.first.keys.unshift('TICKER')
       write_csv("#{FILESOURCE}stock_data.csv", headers, write_data)
+    end
+
+    def merge_hashes(hash_base, hash_new)
+      hash_out = deep_dup(hash_base)
+      hash_out.each { |k, _v| hash_out[k].merge!(hash_new.dig(k) || {}) }
+      hash_out
     end
 
     def new_financials
