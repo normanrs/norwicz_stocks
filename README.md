@@ -20,6 +20,9 @@ A simple app to gather financial data on high-dividend stocks, output top picks,
 ## Run the app:
 `./get_financials` will write financials (for reals).
 
+## Evaluate a single stock in the data:
+`CONFIG=prd rake stock_eval[STOCK]` will evaluate a single stock. STOCK must be the ticker symbol in all caps.
+
 ## Discussion
 The first type of stocks evaluated here are REITs (real estate investment trusts). REIT ETFs (exchange-traded funds) are a special class of stock. They have numerous legal requirements that go above and beyond those for other stocks, restricting the extent to which they must be backed by assets and the percent of revenue they must return to investors in the form of dividends. This and the inherent value of real estate make them a particularly attractive investement in that they can be safer and yet still high-performing as compared to other stock types. Other high-dividend ETFs in asset management and technology industries have also been included because of their predicted reliability.
 Dividend-oriented ETFs operate differently than other stocks, making them more difficult to evaluate in terms of performance. The normal metrics, such as price to earnings ration (P/E) or price to earnings growth (PEG) aren't good signals because the operations behind the funds may not be intended toward growth. An ETF that earns 6% is a good dividend stock even if its stock price ends the year the same as it began. This app attempts to collect data that, when analyzed properly, CAN help determine if an REIT is worth investing in. (Analyzing the data is a work in progress!)

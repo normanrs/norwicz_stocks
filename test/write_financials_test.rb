@@ -7,6 +7,7 @@ require './lib/write_financials.rb'
 
 class WriteFinancialsTest < Minitest::Test
   include WriteHelper
+  include DataHelper
   def setup; end
 
   def test_write_statements
@@ -32,5 +33,17 @@ class WriteFinancialsTest < Minitest::Test
   def test_top_picks
     test_method = WriteFinancials.top_picks
     refute_empty test_method
+  end
+
+  def test_evaluate_stock_fail
+    test_stock = stock_list.first
+    test_method = WriteFinancials.evaluate_stock(test_stock)
+    refute_empty test_method
+  end
+
+  def test_evaluate_stock_pass
+    test_stock = stock_list.last
+    test_method = WriteFinancials.evaluate_stock(test_stock)
+    assert_empty test_method
   end
 end
