@@ -25,12 +25,17 @@ module RequestHelper
     uri = URI.parse("#{site}#{path}#{stock}?apikey=#{fmp_key}")
     response = api_call(uri)
     puts "#{stock} #{path} returned #{response.code}"
-    if response.code == '200'
+    if response.code == '200' && no_fmp_error?(response)
       raw = JSON.parse(response.body).first
       fmp_clean(raw)
     else
+      puts "Stock #{stock} returned #{response.body}"
       {}
     end
+  end
+
+  def no_fmp_error?(response)
+    !response.body.include?("Error")
   end
 
   def fmp_clean(raw_data)

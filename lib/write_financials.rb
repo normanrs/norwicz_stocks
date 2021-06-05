@@ -20,12 +20,16 @@ class WriteFinancials
     DAY = Date.today.day
 
     def top_picks
-      stock_data = JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
       top_stocks = {
-        reits: top_reits(stock_data)
+        reits: top_reits(stocks_data)
       }
       write_json("#{FILESOURCE}top_stocks.json", top_stocks)
       top_stocks
+    end
+
+    def evaluate_stock(stock)
+      stock_data = stocks_data.dig(stock) || {}
+      top_reit?(stock_data, verbose = true)
     end
 
     def manual_statements_update
@@ -74,6 +78,10 @@ class WriteFinancials
         new_hash[stock] = new_data
       end
       new_hash
+    end
+
+    def stocks_data
+      @stock_data ||= JSON.parse(File.read("#{FILESOURCE}stock_data.json"), {})
     end
   end
 end

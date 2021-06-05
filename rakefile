@@ -1,10 +1,16 @@
 require 'rake'
 require "rake/testtask"
+require './lib/write_financials.rb'
 
 task default: "test"
 Rake::TestTask.new do |task|
+  tests_num = Dir["test/*_test.rb"].count
+  # puts "** Running #{tests_num} test files **"
   task.pattern = "test/*_test.rb"
 end
 
-tests_num = Dir["test/*_test.rb"].count
-puts "** Running #{tests_num} test files **"
+task :stock_eval, [:stock] do |_t, args|
+  stock_to_eval = args[:stock]
+  result = WriteFinancials.evaluate_stock(stock_to_eval)
+  puts result
+end
