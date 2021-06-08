@@ -18,7 +18,7 @@ A simple app to gather financial data on high-dividend stocks, output top picks,
 `bundle exec rake` will run all application tests.
 
 ## Run the app:
-`./get_financials` will write financials (for reals).
+`get_financials` will write financials (for reals).
 
 ## Evaluate a single stock in the data:
 `CONFIG=prd rake stock_eval[STOCK]` will evaluate a single stock. STOCK must be the ticker symbol in all caps.
