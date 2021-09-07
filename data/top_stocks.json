@@ -2,17 +2,23 @@
 	"reits": [
 		"BDN",
 		"BFS",
-		"CIO",
+		"CTRE",
+		"EPD",
 		"GEO",
 		"GTY",
 		"ILPT",
+		"IRM",
+		"LOAN",
+		"LTC",
 		"MGP",
 		"MMP",
+		"MPLX",
 		"MPW",
 		"NHI",
 		"OLP",
-		"PDM",
-		"SBRA",
+		"SELF",
+		"TCPC",
+		"UHT",
 		"WPC"
 	]
 }

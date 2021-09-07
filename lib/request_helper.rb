@@ -20,7 +20,7 @@ module RequestHelper
   end
 
   def call_fmp(path, stock)
-    fmp_key = env_config == 'dev' ? 'demo' : ENV['TOKEN_FMP']
+    fmp_key = ENV['TOKEN_FMP']
     site = 'https://financialmodelingprep.com/api/v3'
     uri = URI.parse("#{site}#{path}#{stock}?apikey=#{fmp_key}")
     response = api_call(uri)
