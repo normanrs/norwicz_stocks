@@ -21,8 +21,8 @@ jobs:
       - checkout
       - ruby/install:
           version: '2.7'
-      - run: echo "Ruby 2.7 has been installed"
       - run: gem install bundler
+      - run: bundle install
       - run: ./get_financials
 
 workflows:
