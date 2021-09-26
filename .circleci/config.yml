@@ -3,15 +3,15 @@ orbs:
   ruby: circleci/ruby@1.2.0
 
 jobs:
-  build:
+  build_and_test:
     docker:
       - image: 'cimg/ruby:2.7-node'
     steps:
       - checkout
       - ruby/install:
           version: '2.7'
-      - run: echo "Ruby 2.7 has been installed"
-      - ruby/install-deps
+      - run: gem install bundler
+      - run: bundle install
       - run: mkdir tmp
       - run: rake
   run_update:
@@ -21,14 +21,14 @@ jobs:
       - checkout
       - ruby/install:
           version: '2.7'
-      - run: echo "Ruby 2.7 has been installed"
-      - ruby/install-deps
+      - run: gem install bundler
+      - run: bundle install
       - run: ./get_financials
 
 workflows:
   pull_request:
     jobs:
-      - build:
+      - build_and_test:
           filters:
             branches:
               ignore: master

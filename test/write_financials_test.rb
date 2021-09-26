@@ -41,9 +41,4 @@ class WriteFinancialsTest < Minitest::Test
     refute_empty test_method
   end
 
-  def test_evaluate_stock_pass
-    test_stock = stock_list.last
-    test_method = WriteFinancials.evaluate_stock(test_stock)
-    assert_empty test_method
-  end
 end

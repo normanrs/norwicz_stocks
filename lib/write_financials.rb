@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'deep_merge'
 require 'net/http'
 require_relative 'data_helper'
 require_relative 'request_helper'
