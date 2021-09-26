@@ -5,7 +5,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: 'cimg/base:stable'
+      - image: cimg/ruby:2.7.1-node
     steps:
       - checkout
       - ruby/install:
@@ -16,7 +16,7 @@ jobs:
       - run: rake
   run_update:
     docker:
-      - image: 'cimg/base:stable'
+      - image: cimg/ruby:2.7.1-node
     steps:
       - checkout
       - ruby/install:
@@ -37,7 +37,7 @@ workflows:
       - run_update
     triggers:
       - schedule:
-          cron: "0 0 * * 2"
+          cron: "0 0 1,6,11,16,21,26 * *"
           filters:
             branches:
               only: master
