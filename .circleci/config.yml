@@ -5,7 +5,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: 'cimg/ruby:2.7.1-node'
+      - image: 'cimg/ruby:2.7-node'
     steps:
       - checkout
       - ruby/install:
@@ -16,7 +16,7 @@ jobs:
       - run: rake
   run_update:
     docker:
-      - image: 'cimg/base:stable'
+      - image: 'cimg/ruby:2.7-node'
     steps:
       - checkout
       - ruby/install:
