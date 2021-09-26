@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@1.1.2
+  ruby: circleci/ruby@1.2.0
 
 jobs:
   build:
     docker:
-      - image: cimg/ruby:2.7.1-node
+      - image: 'cimg/ruby:2.7.1-node'
     steps:
       - checkout
       - ruby/install:
@@ -16,7 +16,7 @@ jobs:
       - run: rake
   run_update:
     docker:
-      - image: cimg/ruby:2.7.1-node
+      - image: 'cimg/base:stable'
     steps:
       - checkout
       - ruby/install:
